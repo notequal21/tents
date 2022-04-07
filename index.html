@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&family=Inika&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Tents</title>
@@ -28,22 +29,11 @@
         </a>
         <a href="" class="header-body__btns-item header-body__btns-item_circle header-body__btns-item_cart">
           <span>3</span>
-          <svg width="34" height="38" viewBox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M33.8002 37.1501H0.200195L2.3002 10.0222H31.7002L33.8002 37.1501ZM1.80165 35.664H32.1208L30.0208 11.5083H3.90165L1.80165 35.664Z"
-              fill="#336200" />
-            <path
-              d="M24.7604 15.0942H23.1589V7.56056C23.1589 5.02449 21.201 1.88597 17.2739 1.88597C13.3468 1.88597 11.3889 5.02449 11.3889 7.56056V15.0942H9.70947V7.56056C9.70947 3.60728 13.0628 0.399902 17.1959 0.399902C21.3291 0.399902 24.6824 3.60728 24.6824 7.56056V15.0942H24.7604Z"
-              fill="#336200" />
-          </svg>
+          <img src="./img/header/cart.svg" alt="">
         </a>
         <a href="tel:0722133333" class="header-body__btns-item header-body__btns-item_tel">
           072-2133333
-          <svg width="28" height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M7.99279 34C8.2251 33.9997 8.45602 33.9639 8.67776 33.8938C15.0957 31.8013 20.5469 27.4207 24.0199 21.5648C27.493 15.7089 28.7521 8.77517 27.5639 2.04991C27.4844 1.48283 27.2062 0.963669 26.7802 0.587296C26.3541 0.210923 25.8087 0.00246311 25.2435 0H25.2295L20.057 0.0184174C19.4982 0.0241236 18.9592 0.2292 18.5348 0.597618C18.1104 0.966037 17.8277 1.47423 17.7364 2.03292L16.8279 7.49134C16.7444 7.96849 16.8035 8.46005 16.9978 8.90284C17.1921 9.34563 17.5126 9.71941 17.9181 9.97617L20.9377 11.8575C21.0799 11.9442 21.1924 12.073 21.2599 12.2265C21.3274 12.3801 21.3467 12.5509 21.3152 12.716C20.1551 16.8113 17.9462 20.5226 14.9127 23.4727C14.7816 23.6041 14.6097 23.6853 14.4262 23.7027C14.2427 23.72 14.0588 23.6723 13.906 23.5677L11.2081 21.709C10.7956 21.4265 10.305 21.2843 9.80745 21.3028C9.30988 21.3214 8.83112 21.4999 8.44022 21.8124L3.98071 25.3739C3.52132 25.7457 3.21127 26.2743 3.10836 26.8609C3.00546 27.4475 3.11671 28.052 3.4215 28.5614L5.97984 32.8426C6.18788 33.1955 6.48261 33.4877 6.83546 33.6906C7.18831 33.8935 7.58711 34.0001 7.99279 34ZM25.2435 1.60367C25.4351 1.60436 25.6199 1.67534 25.7638 1.80347C25.9077 1.93161 26.0009 2.10823 26.0262 2.30067C27.1513 8.64705 25.9663 15.1916 22.6911 20.7197C19.4159 26.2478 14.2728 30.3841 8.21651 32.3609C8.04758 32.4121 7.86665 32.4049 7.70218 32.3406C7.5377 32.2762 7.39896 32.1583 7.30781 32.0053L4.74964 27.7242C4.64834 27.5501 4.61233 27.3448 4.64828 27.146C4.68423 26.9472 4.78974 26.7682 4.94538 26.6418L9.40472 23.0803C9.53694 22.9745 9.69897 22.914 9.86734 22.9076C10.0357 22.9013 10.2018 22.9493 10.3414 23.0449L13.0393 24.9036C13.4856 25.2122 14.0241 25.354 14.5622 25.3046C15.1003 25.2553 15.6046 25.0178 15.989 24.633C19.2372 21.4607 21.6004 17.4746 22.8389 13.0787C22.9485 12.5855 22.9022 12.0698 22.7065 11.6047C22.5108 11.1397 22.1758 10.7488 21.7486 10.4876L18.729 8.60625C18.5925 8.51912 18.4848 8.3925 18.42 8.24274C18.3552 8.09298 18.3363 7.92698 18.3656 7.76617L19.2743 2.30775C19.307 2.11706 19.4046 1.94401 19.5502 1.81873C19.6958 1.69345 19.88 1.62387 20.071 1.62208L25.2435 1.60367ZM5.64435 20.3788C5.82178 20.3757 5.99293 20.3119 6.13001 20.1977C6.26708 20.0835 6.36188 19.9256 6.39912 19.7498C7.36053 15.3085 9.79866 11.3369 13.305 8.5C13.4668 8.36599 13.5704 8.17322 13.5939 7.96282C13.6174 7.75241 13.5589 7.54102 13.4308 7.37375C13.3687 7.29131 13.291 7.22229 13.2021 7.17075C13.1133 7.11922 13.0152 7.08621 12.9136 7.07367C12.812 7.06113 12.7089 7.06931 12.6105 7.09773C12.5121 7.12615 12.4202 7.17424 12.3404 7.23917C8.5521 10.3112 5.91741 14.6062 4.87541 19.4083C4.83341 19.6156 4.8726 19.8314 4.9848 20.0098C5.09699 20.1883 5.27346 20.3155 5.4766 20.3646C5.53181 20.3757 5.58808 20.3805 5.64435 20.3788ZM0.779544 20.9298C0.96672 20.929 1.14726 20.86 1.28841 20.7355C1.42956 20.6109 1.52181 20.439 1.54831 20.2512C2.07627 16.6868 3.37362 13.2843 5.34776 10.2861C7.32191 7.28787 9.92431 4.76785 12.9695 2.90559C13.1469 2.79395 13.274 2.61633 13.3236 2.41083C13.3733 2.20533 13.3414 1.98829 13.2351 1.80625C13.1848 1.71572 13.1172 1.63633 13.0361 1.57282C12.955 1.50931 12.8622 1.46296 12.7631 1.43653C12.6639 1.4101 12.5607 1.40412 12.4593 1.41896C12.3579 1.4338 12.2603 1.46916 12.1726 1.52292C8.9286 3.50613 6.15657 6.19052 4.05426 9.38453C1.95194 12.5785 0.57123 16.2034 0.0106094 20.0005C-0.0233982 20.2082 0.0250764 20.4211 0.145591 20.5926C0.266106 20.7641 0.448792 20.8803 0.653607 20.9157C0.695173 20.9231 0.737351 20.9274 0.779544 20.9284V20.9298Z"
-              fill="#386D00" />
-          </svg>
+          <img src="./img/header/tel.svg" alt="">
         </a>
         <a href="" class="header-body__btns-item header-body__btns-item_circle header-body__btns-item_he">
           HE
@@ -60,14 +50,7 @@
         </a>
         <div class="header-body__btns-item header-body__btns-item_menu">
           טירפת
-          <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M1.4 0H19.6C19.9713 0 20.3273 0.149254 20.5898 0.414931C20.8524 0.680607 21 1.04094 21 1.41667C21 1.79239 20.8524 2.15273 20.5898 2.4184C20.3273 2.68408 19.9713 2.83333 19.6 2.83333H1.4C1.0287 2.83333 0.672707 2.68408 0.410156 2.4184C0.147605 2.15273 0 1.79239 0 1.41667C0 1.04094 0.147605 0.680607 0.410156 0.414931C0.672707 0.149254 1.0287 0 1.4 0ZM1.4 7.08333H19.6C19.9713 7.08333 20.3273 7.23259 20.5898 7.49826C20.8524 7.76394 21 8.12428 21 8.5C21 8.87572 20.8524 9.23606 20.5898 9.50174C20.3273 9.76741 19.9713 9.91667 19.6 9.91667H1.4C1.0287 9.91667 0.672707 9.76741 0.410156 9.50174C0.147605 9.23606 0 8.87572 0 8.5C0 8.12428 0.147605 7.76394 0.410156 7.49826C0.672707 7.23259 1.0287 7.08333 1.4 7.08333ZM1.4 14.1667H19.6C19.9713 14.1667 20.3273 14.3159 20.5898 14.5816C20.8524 14.8473 21 15.2076 21 15.5833C21 15.9591 20.8524 16.3194 20.5898 16.5851C20.3273 16.8507 19.9713 17 19.6 17H1.4C1.0287 17 0.672707 16.8507 0.410156 16.5851C0.147605 16.3194 0 15.9591 0 15.5833C0 15.2076 0.147605 14.8473 0.410156 14.5816C0.672707 14.3159 1.0287 14.1667 1.4 14.1667Z"
-              fill="#707070" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M2.4 0H20.6C20.9713 0 21.3273 0.149254 21.5898 0.414931C21.8524 0.680607 22 1.04094 22 1.41667C22 1.79239 21.8524 2.15273 21.5898 2.4184C21.3273 2.68408 20.9713 2.83333 20.6 2.83333H2.4C2.0287 2.83333 1.67271 2.68408 1.41016 2.4184C1.14761 2.15273 1 1.79239 1 1.41667C1 1.04094 1.14761 0.680607 1.41016 0.414931C1.67271 0.149254 2.0287 0 2.4 0ZM2.4 7.08333H20.6C20.9713 7.08333 21.3273 7.23259 21.5898 7.49826C21.8524 7.76394 22 8.12428 22 8.5C22 8.87572 21.8524 9.23606 21.5898 9.50174C21.3273 9.76741 20.9713 9.91667 20.6 9.91667H2.4C2.0287 9.91667 1.67271 9.76741 1.41016 9.50174C1.14761 9.23606 1 8.87572 1 8.5C1 8.12428 1.14761 7.76394 1.41016 7.49826C1.67271 7.23259 2.0287 7.08333 2.4 7.08333ZM2.4 14.1667H20.6C20.9713 14.1667 21.3273 14.3159 21.5898 14.5816C21.8524 14.8473 22 15.2076 22 15.5833C22 15.9591 21.8524 16.3194 21.5898 16.5851C21.3273 16.8507 20.9713 17 20.6 17H2.4C2.0287 17 1.67271 16.8507 1.41016 16.5851C1.14761 16.3194 1 15.9591 1 15.5833C1 15.2076 1.14761 14.8473 1.41016 14.5816C1.67271 14.3159 2.0287 14.1667 2.4 14.1667Z"
-              fill="#336300" />
-          </svg>
+          <img src="./img/header/burger.svg" alt="">
         </div>
       </div>
     </div>
@@ -77,14 +60,7 @@
     <div class="header-menu__body">
       <div class="header-menu__top">
         <div class="header-menu__top-close">
-          <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0.359053 18.6414C-0.119029 18.1633 -0.119029 17.3882 0.359053 16.9101L16.9102 0.35857C17.3882 -0.119524 18.1634 -0.119523 18.6414 0.358571C19.1195 0.836665 19.1195 1.61181 18.6414 2.0899L2.09034 18.6414C1.61226 19.1195 0.837134 19.1195 0.359053 18.6414Z"
-              fill="#D3D3D3" />
-            <path
-              d="M18.6409 18.6414C19.119 18.1633 19.119 17.3882 18.6409 16.9101L2.08985 0.35857C1.61177 -0.119524 0.836643 -0.119523 0.358561 0.358571C-0.11952 0.836665 -0.11952 1.61181 0.358561 2.0899L16.9097 18.6414C17.3877 19.1195 18.1629 19.1195 18.6409 18.6414Z"
-              fill="#D3D3D3" />
-          </svg>
+          <img src="./img/header/closeBtn.svg" alt="">
         </div>
         <span>
           טירפת
@@ -289,10 +265,18 @@
         <div class="tents-body__item-tip">
           לבק הנק
           <span>
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
           </span>
         </div>
         <div class="tents-body__item-img">
@@ -314,10 +298,18 @@
         <div class="tents-body__item-tip">
           לבק הנק
           <span>
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
           </span>
         </div>
         <div class="tents-body__item-img">
@@ -339,10 +331,18 @@
         <div class="tents-body__item-tip">
           לבק הנק
           <span>
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
           </span>
         </div>
         <div class="tents-body__item-img">
@@ -364,10 +364,18 @@
         <div class="tents-body__item-tip">
           לבק הנק
           <span>
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
           </span>
         </div>
         <div class="tents-body__item-img">
@@ -389,10 +397,18 @@
         <div class="tents-body__item-tip">
           לבק הנק
           <span>
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
           </span>
         </div>
         <div class="tents-body__item-img">
@@ -414,10 +430,18 @@
         <div class="tents-body__item-tip">
           לבק הנק
           <span>
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
-            לבק הנק לש רואית טסקט
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
+            <p>
+              לבק הנק לש רואית טסקט
+            </p>
           </span>
         </div>
         <div class="tents-body__item-img">
@@ -449,18 +473,570 @@
     <span></span>
   </div>
   <div class="container">
-    <div class="faq-body">
-
+    <div class="faq-body one">
+      <div class="faq-body__item">
+        <div class="faq-body__item-title"><img src="./img/icons/cross.svg" alt=""> ?הכוס הלוע המכ</div>
+        <div class="faq-body__item-content">
+          .טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע
+          הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע
+          רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה
+        </div>
+      </div>
+      <div class="faq-body__item">
+        <div class="faq-body__item-title"><img src="./img/icons/cross.svg" alt="">?רדה ךכס יושע הממ</div>
+        <div class="faq-body__item-content">
+          .טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע
+          הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע
+          רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה
+        </div>
+      </div>
+      <div class="faq-body__item">
+        <div class="faq-body__item-title"><img src="./img/icons/cross.svg" alt="">?ךכסה ןוסחיאל קית לבקמ ךכס שכורש ימ
+          םאה</div>
+        <div class="faq-body__item-content">
+          .טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע
+          הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע
+          רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה
+        </div>
+      </div>
+      <div class="faq-body__item">
+        <div class="faq-body__item-title"><img src="./img/icons/cross.svg" alt="">?םיקיזמ דגנכ יוטיח רבוע ךכסה םאה</div>
+        <div class="faq-body__item-content">
+          .טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע
+          הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע
+          רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה
+        </div>
+      </div>
+      <div class="faq-body__item">
+        <div class="faq-body__item-title"><img src="./img/icons/cross.svg" alt="">?םכל שי וזיא ,הלודג הכוס ךירצ ינא
+        </div>
+        <div class="faq-body__item-content">
+          .טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע
+          הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע
+          רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה
+        </div>
+      </div>
     </div>
+    <div class="title-arrow title-arrow_mob">
+      תובושתו תולאש לכ
+      <img src="./img/icons/arrow.svg" alt="">
+    </div>
+  </div>
+</div>
+            <div class="about">
+  <div class="about__title title">
+    <span></span>
+    ונחנא ימ
+    <span></span>
+  </div>
+  <div class="container">
+    <div class="about-body">
+      <div class="about-body__col">
+        <div class="about-body__col-title">
+          ונחנא ימ
+        </div>
+        <div class="about-body__col-desc">
+          .טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע
+          הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע
+          רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה
+          טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז
+          ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקטדבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה טסקט דבוע הז ךיא לע רבסה
+          טסקט
+        </div>
+        <div class="about-body__col-btn">
+          דוע ארק
+        </div>
+      </div>
+      <div class="about-body__col about-body__col_img">
+        <div class="about-body__img">
+          <div class="swiper about-big-img">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/about/01.png" srcset="./img/about/01.png 1x, ./img/about/01@2x.png 2x" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/about/01.png" srcset="./img/about/01.png 1x, ./img/about/01@2x.png 2x" />
+              </div>
+            </div>
+          </div>
+          <div thumbsSlider="" class="swiper about-small-img">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/about/01.png" srcset="./img/about/01.png 1x, ./img/about/01@2x.png 2x" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/about/01.png" srcset="./img/about/01.png 1x, ./img/about/01@2x.png 2x" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="reviews">
+  <div class="reviews__bg-preson">
+    <img src="./img/reviews/bg-person.png" srcset="./img/reviews/bg-person.png 1x, ./img/reviews/bg-person@2x.png 2x"
+      alt="">
+  </div>
+  <div class="reviews__title title">
+    <span></span>
+    ונילע םיצילממ
+    <span></span>
+  </div>
+  <div class="reviews-tab">
+    <div class="reviews-tab__btns">
+      <div class="reviews-tab__btns-item js-tab-trigger" data-tab="1">הדות יבתכמ</div>
+      <div class="reviews-tab__btns-item js-tab-trigger active" data-tab="2"><span>(24)</span> לגוגב תוצלמה</div>
+    </div>
+    <div class="reviews-tab__content js-tab-content" data-tab="1">
+      <div dir="rtl" class="reviews-tab__content-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+        </div>
+
+        <div class="reviews-swiper-button-prev">
+          <img src="./img/icons/slider-btn.svg" alt="">
+        </div>
+        <div class="reviews-swiper-button-next">
+          <img src="./img/icons/slider-btn.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="reviews-tab__content js-tab-content active" data-tab="2">
+      <div dir="rtl" class="reviews-tab__content-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/reviews/01.png" srcset="./img/reviews/01.png 1x, ./img/reviews/01@2x.png 2x" alt="">
+          </div>
+        </div>
+
+        <div class="reviews-swiper-button-prev">
+          <img src="./img/icons/slider-btn.svg" alt="">
+        </div>
+        <div class="reviews-swiper-button-next">
+          <img src="./img/icons/slider-btn.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="sponsors">
+  <div class="sponsors__title title">
+    <span></span>
+    וניתוחוקל ןיב
+    <span></span>
+  </div>
+  <div dir="rtl" class="sponsors__slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/01.png" srcset="./img/sponsors/01.png 1x, ./img/sponsors/01@2x.png 2x" alt="">
+        </div>
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/02.png" srcset="./img/sponsors/02.png 1x, ./img/sponsors/02@2x.png 2x" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/03.png" srcset="./img/sponsors/03.png 1x, ./img/sponsors/03@2x.png 2x" alt="">
+        </div>
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/04.png" srcset="./img/sponsors/04.png 1x, ./img/sponsors/04@2x.png 2x" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/01.png" srcset="./img/sponsors/01.png 1x, ./img/sponsors/01@2x.png 2x" alt="">
+        </div>
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/02.png" srcset="./img/sponsors/02.png 1x, ./img/sponsors/02@2x.png 2x" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/03.png" srcset="./img/sponsors/03.png 1x, ./img/sponsors/03@2x.png 2x" alt="">
+        </div>
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/04.png" srcset="./img/sponsors/04.png 1x, ./img/sponsors/04@2x.png 2x" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/01.png" srcset="./img/sponsors/01.png 1x, ./img/sponsors/01@2x.png 2x" alt="">
+        </div>
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/02.png" srcset="./img/sponsors/02.png 1x, ./img/sponsors/02@2x.png 2x" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/03.png" srcset="./img/sponsors/03.png 1x, ./img/sponsors/03@2x.png 2x" alt="">
+        </div>
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/04.png" srcset="./img/sponsors/04.png 1x, ./img/sponsors/04@2x.png 2x" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/01.png" srcset="./img/sponsors/01.png 1x, ./img/sponsors/01@2x.png 2x" alt="">
+        </div>
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/02.png" srcset="./img/sponsors/02.png 1x, ./img/sponsors/02@2x.png 2x" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/03.png" srcset="./img/sponsors/03.png 1x, ./img/sponsors/03@2x.png 2x" alt="">
+        </div>
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/04.png" srcset="./img/sponsors/04.png 1x, ./img/sponsors/04@2x.png 2x" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/01.png" srcset="./img/sponsors/01.png 1x, ./img/sponsors/01@2x.png 2x" alt="">
+        </div>
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/02.png" srcset="./img/sponsors/02.png 1x, ./img/sponsors/02@2x.png 2x" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/03.png" srcset="./img/sponsors/03.png 1x, ./img/sponsors/03@2x.png 2x" alt="">
+        </div>
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/04.png" srcset="./img/sponsors/04.png 1x, ./img/sponsors/04@2x.png 2x" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/01.png" srcset="./img/sponsors/01.png 1x, ./img/sponsors/01@2x.png 2x" alt="">
+        </div>
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/02.png" srcset="./img/sponsors/02.png 1x, ./img/sponsors/02@2x.png 2x" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/03.png" srcset="./img/sponsors/03.png 1x, ./img/sponsors/03@2x.png 2x" alt="">
+        </div>
+        <div class="sponsors__slider-row">
+          <img src="./img/sponsors/04.png" srcset="./img/sponsors/04.png 1x, ./img/sponsors/04@2x.png 2x" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="sponsors__slider-prev">
+      <img src="./img/icons/slider-btn.svg" alt="">
+    </div>
+    <div class="sponsors__slider-next">
+      <img src="./img/icons/slider-btn.svg" alt="">
+    </div>
+  </div>
+</div>
+            <div class="about-videos">
+  <div class="about-videos__title title">
+    <div class="title-arrow">
+      תובושתו תולאש לכ
+      <img src="./img/icons/arrow.svg" alt="">
+    </div>
+    <span></span>
+    םירחבומ םינוטרס
+    <span></span>
+  </div>
+  <div dir="rtl" class="about-videos__slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="about-videos__slider-video">
+          <img src="./img/video/about-video.png"
+            srcset="./img/video/about-video.png 1x, ./img/video/about-video@2x.png 2x" alt="">
+        </div>
+        <div class="about-videos__slider-title">
+          ןוטרסה לש םש ןוטרסה לש םש
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="about-videos__slider-video">
+          <img src="./img/video/about-video.png"
+            srcset="./img/video/about-video.png 1x, ./img/video/about-video@2x.png 2x" alt="">
+        </div>
+        <div class="about-videos__slider-title">
+          ןוטרסה לש םש ןוטרסה לש םש
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="about-videos__slider-video">
+          <img src="./img/video/about-video.png"
+            srcset="./img/video/about-video.png 1x, ./img/video/about-video@2x.png 2x" alt="">
+        </div>
+        <div class="about-videos__slider-title">
+          ןוטרסה לש םש ןוטרסה לש םש
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="about-videos__slider-video">
+          <img src="./img/video/about-video.png"
+            srcset="./img/video/about-video.png 1x, ./img/video/about-video@2x.png 2x" alt="">
+        </div>
+        <div class="about-videos__slider-title">
+          ןוטרסה לש םש ןוטרסה לש םש
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="title-arrow title-arrow_mob">
+    תובושתו תולאש לכ
+    <img src="./img/icons/arrow.svg" alt="">
+  </div>
+</div>
+            <div class="about-videos about-videos_photo">
+  <div class="about-videos__title title">
+    <div class="title-arrow">
+      םירמאמ לכ
+      <img src="./img/icons/arrow.svg" alt="">
+    </div>
+    <span></span>
+    םירחבומ םירמאמ
+    <span></span>
+  </div>
+  <div dir="rtl" class="about-videos__slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="about-videos__slider-video">
+          <img src="./img/video/about-video.png"
+            srcset="./img/video/about-video.png 1x, ./img/video/about-video@2x.png 2x" alt="">
+        </div>
+        <div class="about-videos__slider-title">
+          ןוטרסה לש םש ןוטרסה לש םש
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="about-videos__slider-video">
+          <img src="./img/video/about-video.png"
+            srcset="./img/video/about-video.png 1x, ./img/video/about-video@2x.png 2x" alt="">
+        </div>
+        <div class="about-videos__slider-title">
+          ןוטרסה לש םש ןוטרסה לש םש
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="about-videos__slider-video">
+          <img src="./img/video/about-video.png"
+            srcset="./img/video/about-video.png 1x, ./img/video/about-video@2x.png 2x" alt="">
+        </div>
+        <div class="about-videos__slider-title">
+          ןוטרסה לש םש ןוטרסה לש םש
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="about-videos__slider-video">
+          <img src="./img/video/about-video.png"
+            srcset="./img/video/about-video.png 1x, ./img/video/about-video@2x.png 2x" alt="">
+        </div>
+        <div class="about-videos__slider-title">
+          ןוטרסה לש םש ןוטרסה לש םש
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="title-arrow title-arrow_mob">
+    םירמאמ לכ
+    <img src="./img/icons/arrow.svg" alt="">
   </div>
 </div>
         </div>
         <footer class="footer">
-    
+  <div class="footer__bg">
+    <img src="./img/footer/bg.png" srcset="./img/footer/bg.png 1x, ./img/footer/bg@2x.png 2x" alt="">
+  </div>
+  <div class="footer__title title">
+    <span></span>
+    ופתש
+    <span></span>
+  </div>
+  <div class="footer__social">
+    <div class="footer__social-item">
+      <img src="./img/footer/wu-color.svg" alt="">
+    </div>
+    <div class="footer__social-item">
+      <img src="./img/footer/fb-color.svg" alt="">
+    </div>
+  </div>
+  <form class="footer__follow mob">
+    <div class="footer__follow-title"></div>
+    <div class="footer__follow-subtitle"></div>
+    <input type="text" class="footer__follow-input" placeholder="אלמ םש">
+    <input type="text" class="footer__follow-input" placeholder="ךלש ןופלט ’סמ">
+    <button class="footer__follow-btn">חלש</button>
+  </form>
+  <div class="footer__text">
+    יכרצל טסקט ינגרוא םודיק יכרצל טסקט ינגרוא םודיק יכרצל טסקט ינגרוא םודיק יכרצל טסקט ינגרוא םודיק יכרצל טסקט ינגרוא
+    םודיק יכרצל טסקט ינגרוא םודיק יכרצל טסקט ינגרוא םודיק יכרצל טסקט ינגרוא םודיק יכרצל טסקט ינגרוא םודיק יכרצל טסקט
+    ינגרוא םודיק יכרצל טסקט ינגרוא םודיק ינגרוא םודיק יכרצל טסקט ינגרוא םודיק ינגרוא םודיק יכרצל טסקט ינגרוא םודיק
+    ינגרוא םודיק יכרצל טסקט ינגרוא םודיק
+  </div>
+  <div class="footer-body">
+    <div class="footer-body__col">
+      <div class="footer-body__col-title">
+        רשק תריצי
+      </div>
+      <a href="tel:0722133333" class="footer-body__col-link">
+        072-2133333
+        <img src="./img/footer/tel.svg" alt="">
+      </a>
+      <a href="tel:0722606364" class="footer-body__col-link">
+        072-2606364
+        <img src="./img/footer/fax.svg" alt="">
+      </a>
+      <a href="#" class="footer-body__col-link">
+        072-2133333
+        <img src="./img/footer/wu-yellow.svg" alt="">
+      </a>
+      <a href="mailto:sukkot@sukkothadar.co.il" class="footer-body__col-link">
+        sukkot@sukkothadar.co.il
+        <img src="./img/footer/mail.svg" alt="">
+      </a>
+    </div>
+    <div class="footer-body__col">
+      <div class="footer-body__col-title">
+        תופש
+      </div>
+      <a href="" class="footer-body__col-link">תירבע</a>
+      <a href="" class="footer-body__col-link">English</a>
+      <a href="" class="footer-body__col-link">Русский</a>
+      <a href="" class="footer-body__col-link">Français</a>
+      <a href="" class="footer-body__col-link">Italiano</a>
+    </div>
+    <div class="footer-body__col">
+      <div class="footer-body__col-title">םינורחא םירמאמ</div>
+      <a href="" class="footer-body__col-link">?תיפוקסלט הכוס םיביכרמ ךיא</a>
+      <a href="" class="footer-body__col-link">?םידלי תכוס םיביכרמ ךיא</a>
+      <a href="" class="footer-body__col-link">?םילחנ תוכוסל רדה תוכוס ןיב לדבהה המ</a>
+      <a href="" class="footer-body__col-link">?רתויב הבוטה הכוסה יהמ</a>
+    </div>
+    <div class="footer-body__col">
+      <div class="footer-body__col-title">םייזכרמ םיתוריש </div>
+      <a href="" class="footer-body__col-link">הכוסל םיחולשמ </a>
+      <a href="" class="footer-body__col-link">הכוס תלדגה </a>
+      <a href="" class="footer-body__col-link">הכוס תרכשה </a>
+      <a href="" class="footer-body__col-link">תיפוקסלט הכוס </a>
+      <a href="" class="footer-body__col-link">םידליל תוכוס </a>
+      <a href="" class="footer-body__col-link">תוחפנתמ תוכוס </a>
+    </div>
+    <div class="footer-body__col">
+      <div class="footer-body__col-title">רתאב טווינ </div>
+      <a href="" class="footer-body__col-link">הכוס תיינק </a>
+      <a href="" class="footer-body__col-link">הכוס תרכשה </a>
+      <a href="" class="footer-body__col-link">הכוסל םירמאמ </a>
+      <a href="" class="footer-body__col-link">הכוס תוכלה </a>
+      <a href="" class="footer-body__col-link">םירצומה לכ </a>
+      <a href="" class="footer-body__col-link">תיפוקסלט הכוס </a>
+      <a href="" class="footer-body__col-link">רשק רוצ </a>
+      <a href="" class="footer-body__col-link">תודוא</a>
+    </div>
+    <div class="footer-body__col">
+      <div class="footer-body__col-title">
+        תחטבואמו החוטב הינק
+        <img src="./img/footer/ssl.svg" alt="">
+      </div>
+      <div class="footer-body__col-img">
+        <img src="./img/footer/payments.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="footer-media">
+    <span></span>
+    <a href="" class="footer-media__item">
+      <img src="./img/footer/inst.svg" alt="">
+    </a>
+    <a href="" class="footer-media__item">
+      <img src="./img/footer/yt.svg" alt="">
+    </a>
+    <a href="" class="footer-media__item">
+      <img src="./img/footer/tw.svg" alt="">
+    </a>
+    <a href="" class="footer-media__item">
+      <img src="./img/footer/fb.svg" alt="">
+    </a>
+    <span></span>
+  </div>
+  <div class="footer__sitename">
+    Site name 2010
+  </div>
 </footer>
     </div>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/script.min.js"></script>
 
 </body>
