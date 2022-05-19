@@ -1,0 +1,135 @@
+.pricelist {
+  padding: 55px 0 0;
+
+  &-top {
+
+    &__title {}
+
+    &__subtitle {
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      text-align: center;
+      color: #707070;
+      max-width: 1360px;
+      padding: 0 15px;
+      margin: 20px auto 0;
+    }
+
+    &__filter-mob {
+      display: none;
+    }
+
+    &__filters {
+      display: flex;
+      justify-content: center;
+      margin: 33px 0 0 0;
+
+      flex-direction: row-reverse;
+
+      &-bg {
+        display: none;
+      }
+
+      &-content {
+        display: flex;
+
+        flex-direction: row-reverse;
+
+        &-title {
+          display: none;
+        }
+      }
+
+      &-btn {
+        display: none;
+      }
+
+      .select2-container {
+        width: 325px !important;
+        margin: 0 0 0 30px;
+
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: right;
+
+        &:first-of-type {
+          margin: 0;
+        }
+      }
+
+      .select2-container--default .select2-selection--single {
+        height: 46px;
+        background: #FFFFFF;
+        border: 1px solid #A8A8A8;
+        border-radius: 24px;
+      }
+
+      .select2-container .select2-selection--single .select2-selection__rendered {
+        padding: 0 26px 0;
+      }
+
+      .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 46px;
+        color: #707070;
+      }
+
+      .select2-container--default .select2-selection--single .select2-selection__arrow {
+        top: 20px;
+        left: 18px;
+        width: 15px;
+        height: 8px;
+        background-image: url(../img/icons/arrow-green.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (max-width:767px) {
+          top: 18px;
+        }
+
+        b {
+          display: none;
+        }
+      }
+
+      .select2-container--open {
+        .select2-selection__arrow {
+          transform: rotate(180deg) !important;
+        }
+      }
+
+      &-item {}
+    }
+
+
+    &__clear {
+      margin: 30px 0 0 0;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: #53A300;
+    }
+  }
+}
+
+.select2-dropdown {
+  background: #FFFFFF;
+  border: 1px solid #A8A8A8;
+  border-radius: 24px;
+
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: right;
+  overflow: hidden;
+}

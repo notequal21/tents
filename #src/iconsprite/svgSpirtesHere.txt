@@ -1,0 +1,3 @@
+Svg sprites will be created in this folder by command
+	
+	gulp svgSprite

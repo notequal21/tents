@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'Tents',
+})
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            @@include('components/_header.html', {
+            "page": "main"
+            })
+            @@include('components/ui/_mobile-bottom.html')
+            @@include('components/ui/_tel.html')
+            @@include('components/ui/_callback.html')
+            @@include('components/pages/index/_main.html')
+            @@include('components/pages/index/_advantages.html')
+            @@include('components/pages/index/_video.html')
+            @@include('components/pages/index/_tents.html')
+            @@include('components/pages/index/_faq.html')
+            @@include('components/pages/index/_about.html')
+            @@include('components/pages/index/_reviews.html')
+            @@include('components/pages/index/_sponsors.html')
+            @@include('components/pages/index/_about-videos.html')
+            @@include('components/pages/index/_about-photo.html')
+        </div>
+        @@include('components/_footer.html', {
+        "page": ''
+        })
+    </div>
+
+    @@include('components/_js.html')
+
+</body>
+
+</html>

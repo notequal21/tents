@@ -1,0 +1,155 @@
+.cart-top-admin {
+
+  &__title {
+    margin: 36px 0 0 0;
+  }
+
+  &__body {
+    display: flex;
+    margin: 55px 0 0;
+
+    flex-direction: row-reverse;
+
+    @media (max-width:1400px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width:767px) {
+      margin: 25px 0 0;
+      flex-direction: column-reverse;
+    }
+
+    &-btn {
+      flex: 0 0 170px;
+      background: #53A200;
+      border-radius: 64px;
+      height: 75px;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      color: #FFFFFF;
+
+      @media (max-width:767px) {
+        height: 40px;
+        flex: 0 0 100%;
+      }
+    }
+
+    &-select {}
+
+    button {
+      @media (max-width:1400px) {
+        margin: 20px 20px 0 0;
+      }
+
+      @media (max-width:767px) {
+        margin: 20px 0 0;
+        flex: 0 0 100%;
+      }
+    }
+
+    label {
+      flex: 0 1 100%;
+      display: flex;
+      margin: 0 0 0 20px;
+      border: 7px solid #E7E7E7;
+
+      flex-direction: row-reverse;
+
+      @media (max-width:1400px) {
+        margin: 20px 20px 0 0;
+      }
+
+      @media (max-width:767px) {
+        margin: 20px 0 0;
+        flex: 0 0 100% !important;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+
+      &:nth-of-type(1) {
+        flex: 1 1 226px;
+      }
+
+      &:nth-of-type(2) {
+        flex: 1 1 266px;
+      }
+
+      &:nth-of-type(3) {
+        flex: 1 1 226px;
+      }
+
+      &:nth-of-type(4) {
+        flex: 1 1 316px;
+      }
+
+      &:nth-of-type(5) {
+        flex: 1 1 416px;
+      }
+
+      input,
+      select {
+        flex: 0 1 auto;
+        width: 100%;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: right;
+        color: #000000;
+        padding: 0 10px;
+
+        @media (max-width:767px) {
+          font-size: 16px;
+        }
+      }
+
+      &.select {
+        position: relative;
+
+        &::after {
+          content: url(../img/icons/arrow-green.svg);
+          display: block;
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+          left: 12px;
+        }
+      }
+
+      select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+      }
+
+      &::-ms-expand {
+        display: none;
+      }
+
+      span {
+        display: flex;
+        width: 110px;
+        background-color: #E7E7E7;
+        padding: 0 10px 0 5px;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: right;
+        color: #000000;
+        align-items: center;
+
+        @media (max-width:767px) {
+          font-size: 16px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}

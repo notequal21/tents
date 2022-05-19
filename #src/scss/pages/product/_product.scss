@@ -1,0 +1,179 @@
+.product {
+  position: relative;
+  padding: 65px 0 0 0;
+
+  .container {
+    max-width: 1530px;
+  }
+
+  &-body {
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+
+    &__img {
+      &-btn {
+        margin: 30px 0 0;
+        width: 100%;
+        height: 50px;
+        border: 2px solid #53A200;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20.7273px;
+        line-height: 30px;
+        text-align: center;
+        color: #69AD20;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .pricelist {
+    &-modal__desc-steps {
+      margin: 50px 0 0;
+      display: flex;
+      justify-content: space-between;
+
+      &.mobile {
+        display: none;
+        margin: 25px auto 0;
+        max-width: 500px;
+        order: 5;
+
+        li {
+          flex: 0 0 calc(25% - 9px);
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row-reverse;
+          align-items: center;
+          justify-content: space-between;
+
+          .name {
+            width: calc(100% - 17px);
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13.9207px;
+            line-height: 13px;
+            text-align: right;
+            color: #346600;
+          }
+
+          .num {
+            width: 17px;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 29.0595px;
+            line-height: 110.38%;
+            color: #346600;
+          }
+
+          img {
+            margin: 4px 0 0;
+            flex: 0 0 auto;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+      }
+
+      li {
+        flex: 0 0 120px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+
+        .name {
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22.9939px;
+          line-height: 21px;
+          text-align: right;
+          color: #346600;
+        }
+
+        .num {
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 110.38%;
+          color: #346600;
+        }
+
+        img {
+          margin: 12px 0 0;
+          flex: 0 0 auto;
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+
+    &-modal__img-item {
+      .swiper-slide {
+        outline: 1px solid #D1D1D1 !important;
+      }
+    }
+
+    &-modal__img-list {
+      &.page {
+
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        li {
+          margin: 4px 0 0 4px;
+          flex: 0 0 calc(25% - 3px);
+          border: 1px solid #D1D1D1;
+
+          img {
+            width: calc(100% + 1px);
+            height: calc(100% + 1px);
+            transform: translate(-0.8px, -0.5px);
+          }
+
+          &.active {
+            border: 3px solid #FF9900;
+
+            img {
+              width: calc(100% + 2px);
+              height: calc(100% + 2px);
+              transform: translate(-1px, -1px);
+            }
+          }
+
+          &:nth-child(4n + 1) {
+            margin: 4px 0 0 0;
+          }
+        }
+      }
+    }
+
+    &-modal__cost-count {
+      input {
+        line-height: 35px;
+      }
+
+      button {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      span {
+        padding: 0 10px;
+      }
+    }
+  }
+}

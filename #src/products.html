@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'products',
+})
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            @@include('components/_header.html', {
+            "page": ""
+            })
+
+            @@include('components/ui/_mobile-bottom.html')
+            @@include('components/ui/_tel.html')
+            @@include('components/ui/_callback.html')
+
+            @@include('components/pages/products/_products.html')
+        </div>
+        @@include('components/_footer.html')
+    </div>
+
+    @@include('components/_js.html', {
+    "page": ''
+    })
+
+</body>
+
+</html>

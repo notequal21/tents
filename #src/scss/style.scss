@@ -1,0 +1,95 @@
+// -------- imports --------
+@import "components/fonts";
+@import "components/_normalize.scss";
+@import "components/_mixins.scss";
+@import "components/_variables.scss";
+@import "components/_variables.scss";
+@import "components/_header.scss";
+@import "components/_footer.scss";
+@import "components/_ui.scss";
+@import "pages/index/_main.scss";
+@import "pages/index/_advantages.scss";
+@import "pages/index/_video.scss";
+@import "pages/index/_tents.scss";
+@import "pages/index/_faq.scss";
+@import "pages/index/_about.scss";
+@import "pages/index/_reviews.scss";
+@import "pages/index/_sponsors.scss";
+@import "pages/index/_about-videos.scss";
+@import "pages/certificates/_certificates.scss";
+@import "pages/products/_products.scss";
+@import "pages/404.scss";
+@import "pages/pricelist/_top.scss";
+@import "pages/pricelist/_content.scss";
+@import "pages/pricelist/_modal.scss";
+@import "pages/cart/_cart.scss";
+@import "pages/cart/_cart-slider.scss";
+@import "pages/cart/_cart-bottom.scss";
+@import "pages/cart/_payment.scss";
+@import "pages/cart/_top-admin.scss";
+@import "pages/articles/_articles.scss";
+@import "pages/article/_article.scss";
+@import "pages/article/_article.scss";
+@import "pages/competition/_competition.scss";
+@import "pages/competition/_competition-modal.scss";
+@import "pages/competition-inner/_competition-inner.scss";
+@import "pages/branches/_branches.scss";
+@import "pages/branch/_branch.scss";
+@import "pages/product/_product.scss";
+@import "pages/about/_about.scss";
+@import "pages/alahot/_alahot.scss";
+@import "pages/alahot/_alahot-inner.scss";
+@import "pages/faq/_faq.scss";
+@import "pages/waranty/_waranty.scss";
+@import "pages/business/_business.scss";
+@import "pages/gallery/_gallery-video.scss";
+@import "pages/gallery/_gallery-photo.scss";
+@import "pages/gallery/_gallery-photo-modal.scss";
+@import "pages/gallery/_gallery-video-inner.scss";
+@import "pages/recomendation/_recomendation.scss";
+@import "pages/fullpricelist/_fullpricelist.scss";
+@import "pages/shipping/_shipping.scss";
+@import "pages/increase/_increase.scss";
+@import "pages/catalog/_catalog.scss";
+@import "ui/_tel.scss";
+@import "ui/_callback.scss";
+@import "ui/_mobile-bottom.scss";
+
+@import "media.scss";
+
+
+// fonts --------- &display=swap || &subset=cyrillic-ext
+// throught plugin
+
+
+::selection {}
+
+body {
+    overflow: auto; // <--- delete this if not necessary
+    direction: rtl;
+
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1720px; // <--- container res +30px for padding
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &.page404 {
+        min-height: auto;
+    }
+}
+
+.content {
+    flex: 1 1 auto;
+}

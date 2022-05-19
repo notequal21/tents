@@ -1,0 +1,174 @@
+.waranty {
+  padding: 55px 0 0;
+  position: relative;
+
+  .combobox-list {
+    padding: 80px 0 10px;
+  }
+
+  .products-body__content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 0 0 auto;
+  }
+
+  .products-slidebar {
+    margin: 93px 0 0 260px;
+  }
+
+  &-top {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    color: #000000;
+    text-align: right;
+  }
+
+  &-body {
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: row-reverse;
+
+    &__col {
+      flex: 0 0 calc(50% - 72px);
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item {
+      margin: 40px 0 0;
+      border-bottom: 1px solid #BABABA;
+      padding: 0 0 20px;
+
+      &:first-child {
+        margin: 0;
+      }
+
+      span {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: right;
+        color: #000000;
+      }
+
+      label {
+        display: block;
+        margin: 20px 0 0;
+        position: relative;
+
+        input {
+          width: 100%;
+          background: transparent;
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 26px;
+          text-align: right;
+          color: #000000;
+        }
+
+        img {
+          position: absolute;
+          left: 5px;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    margin: 55px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    flex-direction: row-reverse;
+
+    &__btn {
+      background: #53A200;
+      border-radius: 46px;
+      padding: 15px 74px 19px;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      color: #FFFFFF;
+      margin: 30px 0 0;
+    }
+
+    &__captcha {
+      width: 310px;
+    }
+
+    &__check {
+      width: calc(100% - 310px);
+
+      label {
+        flex: 0 0 auto;
+        display: flex;
+
+        input {
+          display: none;
+
+          &:checked+.fake::before {
+            display: block;
+          }
+        }
+      }
+
+      .fake {
+        flex: 0 0 auto;
+        margin: 0 0 0 10px;
+        cursor: pointer;
+        display: block;
+        background: #FFFFFF;
+        border: 2px solid #012072;
+        width: 31px;
+        height: 31px;
+        position: relative;
+
+        &::before {
+          content: url(../img/icons/check.svg);
+          position: absolute;
+          display: none;
+          width: 20px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .text {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: right;
+        color: #000000;
+      }
+    }
+  }
+
+  &-text {
+    margin: 22px 0 0;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: right;
+    color: #000000;
+  }
+}

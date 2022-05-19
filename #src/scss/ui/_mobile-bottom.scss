@@ -1,0 +1,58 @@
+.mobile-bottom {
+  position: fixed;
+  z-index: 5;
+  bottom: 18px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #53A200;
+  border: 2px solid #FFFFFF;
+  display: flex;
+  height: 48px;
+  width: calc(100% - 30px);
+  align-items: center;
+  border-radius: 48px;
+  max-width: 500px;
+
+  flex-direction: row-reverse;
+
+  @media (min-width:993px) {
+    display: none;
+  }
+
+  &__wu {
+    flex: 0 0 auto;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 2px 5px;
+  }
+
+  &__pricelist {
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    height: 100%;
+    flex: 1 1 auto;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__tel {
+    flex: 0 0 auto;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px 0 0;
+  }
+}

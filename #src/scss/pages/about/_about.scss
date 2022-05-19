@@ -1,0 +1,59 @@
+.about-page {
+  position: relative;
+  padding: 50px 0 0;
+
+  .combobox-list {
+    padding: 80px 0 10px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    &-btn {
+      margin: 30px 0 0;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      button {
+        background: #53A200;
+        height: 45px;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        flex: 0 0 calc(50% - 8px);
+      }
+    }
+
+    p {
+      max-width: 780px;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: right;
+      color: #000000;
+      margin: 12px 0;
+    }
+
+    img {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    .products-body__content {
+      width: 100%;
+      max-width: 1230px;
+    }
+  }
+}

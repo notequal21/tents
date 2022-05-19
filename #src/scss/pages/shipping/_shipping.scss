@@ -1,0 +1,136 @@
+.shipping {
+  padding: 55px 0 0;
+  position: relative;
+
+  .combobox-list {
+    padding: 80px 0 10px;
+  }
+
+  .alahot__title {
+    margin: 0 0 20px;
+  }
+
+  .products-slidebar {
+    width: 310px;
+  }
+
+  &__text {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: right;
+    color: #000000;
+
+    @media (max-width:767px) {
+      font-size: 14px;
+      line-height: 20.56px;
+    }
+
+    p {
+      margin: 25px 0 0;
+
+      @media (max-width:767px) {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-table {
+    margin: 16px 0 0;
+
+    @media (max-width:767px) {
+      display: none;
+
+      &.mobile {
+        display: flex;
+      }
+    }
+
+    &.mobile {
+      display: none;
+      flex-direction: column;
+
+      .shipping-table__col {
+        border-top: 1px solid #F3F3F3;
+        padding: 22px 0;
+        margin: 0;
+      }
+
+      .shipping-table__row {
+        flex-direction: column;
+        height: auto;
+        background-color: transparent;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: right;
+        color: #000000;
+        border-bottom: none;
+        padding: 0;
+        margin: 15px 0 0;
+
+        &:first-child {
+          margin: 0;
+        }
+
+        align-items: flex-start;
+
+        span {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 26px;
+          text-align: right;
+          margin: 0 0 6px;
+          color: #000000;
+
+        }
+      }
+    }
+
+    &__row {
+      display: flex;
+      align-items: center;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: right;
+      color: #000000;
+      padding: 10px 20px 14px;
+      border-bottom: 2px solid #F3F3F3;
+
+      flex-direction: row-reverse;
+
+      &:last-child {
+        border-bottom: navajowhite;
+      }
+
+      &:first-child {
+        height: 67px;
+        border-bottom: none;
+        background: #F3F3F3;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: right;
+        color: #000000;
+      }
+    }
+
+    &__col {
+      flex: 1 1 calc(25%);
+      margin: 0 0 0 36px;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+}

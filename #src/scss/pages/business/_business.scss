@@ -1,0 +1,188 @@
+.business {
+  padding: 55px 0 0;
+  position: relative;
+
+  .combobox-list {
+    padding: 80px 0 10px;
+  }
+
+  &__title {
+    margin: 0 0 65px;
+  }
+
+
+  .products-body__content {
+    margin: 0 0 0 auto;
+    max-width: 1130px;
+  }
+
+  &-body {
+    display: flex;
+    align-items: flex-start;
+
+    flex-direction: row-reverse;
+
+    &__content {
+      &-text {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: right;
+        color: #000000;
+      }
+    }
+
+    &__imgs {
+      margin: 40px 0 0;
+
+      &-big {
+        width: 100%;
+        height: 0;
+        position: relative;
+        padding: 0 0 68%;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      &-small {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+      }
+
+      &-item {
+        flex: 0 0 calc(14.28% - 7px);
+        position: relative;
+        height: 0;
+        padding: 0 0 10.5%;
+        margin: 8px 0 0 8px;
+
+        &:nth-child(7n +1) {
+          margin: 8px 0 0 0;
+        }
+
+        &:first-child {
+          margin: 8px 0 0 0;
+        }
+
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+
+    &__form {
+      margin: 17px 0 0;
+      background: #F3F3F3;
+      padding: 10px 20px 20px;
+
+      &-title {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: right;
+        color: #000000;
+      }
+
+      &-subtitle {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        color: #000000;
+      }
+
+      form {
+        margin: 20px 0 0;
+        display: flex;
+        flex-direction: row-reverse;
+
+        input,
+        textarea {
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 26px;
+          color: #000000;
+          background: #FFFFFF;
+          border: 1px solid #A4A4A4;
+          border-radius: 6px;
+        }
+
+        input {
+          height: 50px;
+          margin: 20px 0 0;
+          padding: 0 8px;
+
+          &:first-child {
+            margin: 0;
+          }
+        }
+
+        textarea {
+          height: 120px;
+          resize: none;
+          padding: 8px;
+          background: #FFFFFF;
+          border: 1px solid #A4A4A4;
+          border-radius: 6px;
+        }
+
+        button {
+          height: 60px;
+          background: #53A200;
+          border: 1px solid #A4A4A4;
+          border-radius: 71px;
+          display: flex;
+          align-items: center;
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 26px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #FFFFFF;
+          padding: 0 88px;
+          margin: 25px auto 0 0;
+          justify-content: center;
+        }
+      }
+
+      &-col {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        flex: 0 0 312px;
+        margin: 0 0 0 25px;
+
+        &:first-child {
+          margin: 0;
+          flex: 1 1 auto;
+        }
+      }
+    }
+  }
+}

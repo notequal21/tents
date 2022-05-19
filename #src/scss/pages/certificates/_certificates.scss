@@ -1,0 +1,119 @@
+.certificates {
+  padding: 55px 0 0 0;
+  // background-image: url(../img/light-bg.png);
+  // background-repeat: no-repeat;
+  // background-position: top center;
+  // background-size: cover;
+  position: relative;
+
+  .container {
+    max-width: 1530px;
+  }
+
+  &__title {}
+
+  &-body {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row-reverse;
+
+    &__item {
+      flex: 0 0 calc(33.333% - 30px);
+      border-top: 2px solid #453A2B;
+      margin: 50px 0 0 44px;
+
+      &:nth-child(2n + 1) {
+        margin: 50px 0 0 44px;
+      }
+
+      &:nth-child(3n + 1) {
+        margin: 50px 0 0 0;
+      }
+
+      &:nth-child(1) {
+        margin: 0;
+      }
+
+      &:nth-child(2) {
+        margin: 0 0 0 44px;
+      }
+
+      &:nth-child(3) {
+        margin: 0 0 0 44px;
+      }
+
+      &-title {
+        background-image: url(../img/tents/item-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 23px 0;
+        display: flex;
+        justify-content: center;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #000000;
+      }
+
+      &-img {
+        display: block;
+        width: 100%;
+        position: relative;
+        padding: 0 0 149.5%;
+
+        span {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 100px;
+          height: 90px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
+
+.fslightbox-slide-btn-container-previous {
+  left: -5px !important;
+  width: 78px;
+  height: 170px;
+  background-image: url(../img/icons/slider-btn.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%) scale(-1) !important;
+}
+
+.fslightbox-slide-btn-container-next {
+  right: -5px !important;
+  width: 78px;
+  height: 170px;
+  background-image: url(../img/icons/slider-btn.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fslightbox-slide-btn {
+  display: none !important;
+}

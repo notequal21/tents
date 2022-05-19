@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'Tents',
+})
+
+<body>
+
+    <div class="wrapper page404">
+        <div class="content">
+            @@include('components/_header.html', {
+            "page": ""
+            })
+
+            @@include('components/ui/_mobile-bottom.html')
+            @@include('components/ui/_tel.html')
+            @@include('components/ui/_callback.html')
+
+            <div class="page__top">
+                <div class="page__top-title">
+                    <span>
+                        מחירון
+                    </span>
+                    > <span>
+                        עמוד הבית
+                    </span>
+                </div>
+            </div>
+            <div class="notfound">
+                <div class="notfound__bg">
+                    <img src="./img/light-bg.png" srcset="./img/light-bg.png 1x, ./img/light-bg@2x.png 2x" alt="">
+                </div>
+                <div class="container">
+                    <div class="notfound-body">
+                        <div class="notfound-body__content">
+                            <div class="notfound-body__title">
+                                אופססס!
+                            </div>
+                            <div class="notfound-body__desc">
+                                אנו מתנצלים אך הדף שחיפשת אינו קיים. תוכלו להגיע לדף הבית,
+                                למחירון או לדפים אחרים באתר באמצעות סרגל הניווט.
+                            </div>
+                            <div class="notfound-body__subtitle">
+                                לניווט מהיר באתר:
+                            </div>
+                            <div class="notfound-body__list">
+                                <ul class="notfound-body__list-col">
+                                    <li>גלריה</li>
+                                    <li>מאמרים</li>
+                                    <li>צור קשר</li>
+                                </ul>
+                                <ul class="notfound-body__list-col">
+                                    <li>ראשי</li>
+                                    <li>אודות</li>
+                                    <li>מחירון סוכות</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="notfound-body__img">
+                            <img src="./img/404.png" srcset="./img/404.png 1x, ./img/404@2x.png 2x" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('components/_footer.html', {
+    "page": "is404"
+    })
+    </div>
+
+    @@include('components/_js.html')
+
+</body>
+
+</html>

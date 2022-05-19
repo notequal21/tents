@@ -1,0 +1,72 @@
+.faq {
+  position: relative;
+  background-image: url(../img/sponsors/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0 140px;
+  margin: 20px 0 0 0;
+
+  &__title {
+    color: #fff;
+
+    span {
+      &:nth-of-type(1) {
+        flex: 1 1.24 100%;
+      }
+    }
+  }
+
+  &-body {
+    margin: 70px 0 0 0;
+
+    &__item {
+      margin: 5px 0 0 0;
+      background: #F4F4F4;
+      padding: 14px 56px 16px 20px;
+
+      &:first-child {
+        margin: 0;
+      }
+
+      &-title {
+        cursor: pointer;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: right;
+        color: #000000;
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+          right: -36px;
+          transition: all .3s ease;
+        }
+
+        &.active {
+          img {
+            transform: translate(0, -50%) rotate(45deg);
+          }
+        }
+      }
+
+      &-content {
+        display: none;
+        margin: 10px 0 0 0;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: right;
+        color: #000000;
+      }
+    }
+  }
+}

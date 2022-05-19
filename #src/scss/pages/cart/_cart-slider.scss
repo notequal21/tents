@@ -1,0 +1,42 @@
+.cart-slider {
+
+  &__title {
+    margin: 40px 0 0 0;
+  }
+
+  &__item {
+    margin: 65px auto 0;
+    max-width: 1760px;
+    padding: 0 15px;
+    overflow: hidden;
+    position: relative;
+
+    .cart-slider-button {
+      &-prev {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+
+        &.swiper-button-disabled {
+          display: none;
+        }
+      }
+
+      &-next {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 0;
+
+        &.swiper-button-disabled {
+          display: none;
+        }
+
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

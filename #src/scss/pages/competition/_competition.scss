@@ -1,0 +1,513 @@
+.competition {
+  position: relative;
+  padding: 55px 0 0;
+
+  .container {}
+
+  &__title {
+    margin: 0;
+  }
+
+  &-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__desc {
+      margin: 10px auto 0;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      text-align: center;
+      color: #707070;
+      max-width: 1100px;
+    }
+
+    &__btn {
+      display: inline-block;
+      margin: 30px auto 0;
+      background: #53A200;
+      border-radius: 28px;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 6px 60px;
+    }
+  }
+
+  &-body {
+
+    &__top {
+      display: flex;
+      margin: 35px auto 0;
+      // border-bottom: 1px solid #346600;
+      padding: 0 0 18px;
+
+      justify-content: center;
+      flex-direction: row-reverse;
+      overflow: hidden;
+      position: relative;
+
+      div {
+        position: relative;
+      }
+
+      &.mobile {
+        overflow: visible;
+        display: none;
+        position: relative;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #707070;
+        justify-content: center;
+        margin: 20px 0 0;
+        align-items: center;
+
+        .competition-body__top-active {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 0 15px;
+          flex-direction: row-reverse;
+          position: relative;
+
+          &.active {
+
+            &::after,
+            &::before {
+              display: block;
+            }
+          }
+
+          &::after {
+            content: '';
+            display: none;
+            position: absolute;
+            z-index: 11;
+            bottom: 10px;
+            left: 50%;
+            transform: translate(-60px, 0);
+            border-bottom: 8px solid #B4B4B4;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+          }
+
+          &::before {
+            content: '';
+            display: none;
+            position: absolute;
+            z-index: 12;
+            bottom: 8px;
+            left: 50%;
+            transform: translate(-60px, -.5px);
+            border-bottom: 8px solid #fff;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+          }
+        }
+
+        .competition-body__top-list {
+          padding: 14px 10px;
+          position: absolute;
+          background-color: #fff;
+          border: 1px solid #B4B4B4;
+          z-index: 10;
+          top: 30px;
+          width: 140px;
+          height: 160px;
+          display: flex;
+          flex-direction: column;
+          border-radius: 5px;
+          overflow-y: auto;
+
+          display: none;
+
+          &.active {
+            display: block;
+          }
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+
+          &-item {
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: #707070;
+
+            &:not(:first-child) {
+              margin: 6px 0 0 0;
+            }
+          }
+        }
+
+        img {
+          // position: absolute;
+          margin: 0 10px 0 0;
+          width: 11px;
+          height: 6px;
+          object-fit: contain;
+          object-position: center;
+          // top: 10px;
+          // left: -20px;
+        }
+
+        span {
+          display: block;
+          width: calc(100%);
+          position: absolute;
+          left: 50%;
+          bottom: 5px;
+          transform: translate(-50%, 0);
+          background-color: #53A200;
+          height: 1px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: calc(100% - 30px);
+            height: 1px;
+            background-color: #FFD600;
+            bottom: -5px;
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+        }
+      }
+
+      &-btn {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #707070;
+        margin: 0 0 0 47px;
+        position: relative;
+
+        // img {
+        //   position: absolute;
+        //   bottom: -9.5px;
+        //   left: 50%;
+        //   transform: translate(-50%, 0);
+        //   width: 15px;
+        //   height: 15px;
+        //   object-fit: contain;
+        //   object-position: center;
+
+        //   display: none;
+        // }
+
+        img {
+          display: none;
+          position: absolute;
+          bottom: -16px;
+          left: 50%;
+          transform: translate(-50%, -.5px);
+        }
+
+        // &::after {
+        //   content: '';
+        //   position: absolute;
+        //   z-index: 1;
+        //   width: 11px;
+        //   height: 3px;
+        //   background-color: #fff;
+        //   bottom: -7px;
+        //   left: 50%;
+        //   transform: translate(-50%, 0);
+        //   border-radius: 50%;
+
+        //   display: none;
+        // }
+        &::before {
+          content: '';
+          display: none;
+          position: absolute;
+          width: 100vw;
+          height: 1px;
+          // background-color: #fff;
+          background-color: #346600;
+          bottom: -15px;
+          right: calc(50% + 11px);
+          transform: translate(-1px, 0);
+        }
+
+        &::after {
+          content: '';
+          display: none;
+          position: absolute;
+          width: 100vw;
+          height: 1px;
+          // background-color: #fff;
+          background-color: #346600;
+          bottom: -14px;
+          right: auto;
+          left: calc(50% + 13px);
+          transform: translate(-1px, 0);
+        }
+
+        &.active {
+          color: #000000;
+
+          img {
+            display: block;
+          }
+
+          &::before {
+            display: block;
+          }
+
+          &::after {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &__content {
+      margin: 40px 0 0;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+
+      flex-direction: row-reverse;
+    }
+
+    &__item {
+      flex: 0 0 calc(33.333% - 40px);
+
+      &:nth-child(2n + 1) {
+        margin: 50px 0 0 60px;
+      }
+
+      &:nth-child(4n + 2) {
+        margin: 50px 0 0 60px;
+      }
+
+      &:nth-child(even) {
+        margin: 50px 0 0 60px;
+      }
+
+      &:nth-child(3n + 1) {
+        margin: 50px 0 0 0;
+      }
+
+      &:nth-child(1) {
+        margin: 0 0 0 0;
+      }
+
+      &:nth-child(2) {
+        margin: 0 0 0 60px;
+      }
+
+      &:nth-child(3) {
+        margin: 0 0 0 60px;
+      }
+
+      .competition-body__item-info {
+        padding: 10px 20px 10px 36px;
+      }
+
+      &-img {
+        position: relative;
+        height: 0;
+        padding: 0 0 57%;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+
+        .lense {
+          display: none;
+          width: 51px;
+          height: 46px;
+        }
+
+        span {
+          position: absolute;
+          top: 9px;
+          left: 8px;
+          display: block;
+          width: 61px;
+          height: 91px;
+
+          img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+      }
+
+      &-info {
+        background-image: url(../img/tents/item-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: flex-start;
+        padding: 18px 0 18px 16px;
+
+        flex-direction: row-reverse;
+      }
+
+      &-fb {
+        display: flex;
+        flex: 0 0 auto;
+        margin: 0 0 0 18px;
+
+        flex-direction: row-reverse;
+
+        img {
+          flex: 0 0 auto;
+        }
+      }
+
+      &-wu {
+        margin: 0 0 0 8px;
+      }
+
+      &-text {
+        margin: 0 0 0 auto;
+      }
+
+      &-creator {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: #707070;
+      }
+
+      &-size {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: right;
+        color: #707070;
+      }
+    }
+
+    &__rating {
+      cursor: pointer;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: right;
+      color: #53A200;
+      position: relative;
+      display: block;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 8px solid #53A200;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: -16px;
+      }
+
+      span {
+        display: none;
+        position: absolute;
+        z-index: -1;
+        top: -8px;
+        left: -30px;
+        width: calc(100% + 40px);
+        height: calc(100% + 16px);
+        background: #425DAA;
+      }
+
+      &:hover {
+        color: #FFFFFF;
+
+        span {
+          display: block;
+        }
+
+        &::before {
+          border-bottom: 8px solid #FFFFFF;
+        }
+
+        .competition-body__rating-content {
+          display: block;
+        }
+      }
+
+      &-content {
+        display: none;
+        position: absolute;
+        bottom: 30px;
+        left: -30px;
+        width: 236px;
+        background: #425DAA;
+        padding: 10px 20px;
+      }
+
+      &-item {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px dashed #BCB8B8;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        img {
+          margin: 0 0 0 10px;
+        }
+
+        span {
+          z-index: 1;
+          position: relative;
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          text-align: right;
+          color: #FFFFFF;
+          background-color: transparent;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

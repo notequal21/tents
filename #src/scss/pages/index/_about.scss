@@ -1,0 +1,133 @@
+.about {
+  background-image: url(../img/light-bg.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0 50px;
+
+  &__title {
+    display: none;
+  }
+
+  &-body {
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    &__col {
+      display: flex;
+      flex-direction: column;
+
+      align-items: flex-start;
+
+      &_img {
+        display: block;
+        flex: 0 0 auto;
+        margin: 0 0 0 50px;
+      }
+
+      &-title {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 53px;
+        color: #346600;
+        text-align: right;
+        position: relative;
+        margin: -18px 0 0;
+
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 0);
+          width: 56px;
+          height: 2px;
+          background: #FFD600;
+        }
+      }
+
+      &-desc {
+        margin: 20px 0 50px 0;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 189.38%;
+        text-align: right;
+        color: #707070;
+      }
+
+      &-btn {
+        margin: auto auto 0 0;
+        display: inline-block;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 189.38%;
+        text-align: right;
+        color: #FFFFFF;
+        background: #53A300;
+        padding: 3px 33px 5px 37px;
+      }
+    }
+
+
+    &__img {
+      width: 755px;
+      height: auto;
+      position: relative;
+
+      .about-big-img {
+        width: inherit;
+
+        .swiper-slide {
+          height: 0;
+          padding: 0 0 56.3% 0;
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+
+      .about-small-img {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 25px;
+        width: 275px;
+        height: 72px;
+
+        .swiper-slide {
+          border: 1px solid #FFFFFF;
+          transition: all .3s ease;
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+
+          &.swiper-slide-thumb-active {
+            border: 4px solid #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}

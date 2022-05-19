@@ -1,0 +1,177 @@
+.cart-payment {
+
+  &__title {
+    margin: 70px 0 0 0;
+  }
+
+  &__top {
+    margin: 36px 0 0 0;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: row-reverse;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      height: 45px;
+      margin: 0 0 0 50px;
+      border: 2px solid transparent;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      text-align: right;
+      color: #707070;
+
+      flex-direction: row-reverse;
+
+      &:first-child {
+        margin: 0;
+      }
+
+      &.active {
+        color: #346600;
+        border: 2px solid #FFD600;
+        border-radius: 36px;
+      }
+    }
+  }
+
+
+  &__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin: 80px auto 0;
+
+    &-bg {
+      pointer-events: none;
+      position: absolute;
+      transform: translate(-150%, 0);
+      left: 0;
+    }
+
+    &-item {
+      margin: 15px 0 0 0;
+      display: flex;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      text-align: right;
+      color: #000000;
+      height: 55px;
+      border: 5px solid #E7E7E7;
+
+      flex-direction: row-reverse;
+
+      &:first-child {
+        margin: 0;
+      }
+
+      input {
+        width: 100%;
+      }
+
+      span {
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        align-items: center;
+        background: #E7E7E7;
+        width: 200px;
+        padding: 0 10px;
+
+        flex-direction: row-reverse;
+      }
+    }
+
+    &-check {
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 396.88%;
+      text-align: right;
+      color: #000000;
+
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        flex-direction: row-reverse;
+
+        input:checked+span:before {
+          display: block;
+        }
+
+        input:checked+span::after {
+          display: block;
+        }
+      }
+
+      input {
+        display: none;
+      }
+
+      span {
+        display: block;
+        width: 29px;
+        height: 29px;
+        background: #E7E7E7;
+        margin: 0 0 0 5px;
+        position: relative;
+
+        &::before {
+          content: '';
+          display: none;
+          width: 19px;
+          height: 19px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #53A200;
+        }
+
+        &::after {
+          content: '✔';
+          display: none;
+          position: absolute;
+          color: #fff;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    &-btn {
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 150.12%;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 63px;
+      background: #53A200;
+      border: 1px solid #E6E6E6;
+      border-radius: 28px;
+
+      @media (max-width:767px) {
+        font-size: 18px;
+        border-radius: 49px;
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.alahot {
+  position: relative;
+  padding: 55px 0 0;
+
+  .combobox-list {
+    padding: 80px 0 10px;
+  }
+
+  &__title {
+    margin: 0 0 40px;
+  }
+
+  &-body {
+    display: flex;
+    align-items: flex-start;
+
+    flex-direction: row-reverse;
+
+    &__top {
+      display: flex;
+      justify-content: flex-end;
+
+      flex-direction: row-reverse;
+
+      li {
+        display: flex;
+        align-items: center;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-decoration-line: underline;
+        color: #000000;
+        padding: 0 16px;
+        height: 42px;
+        margin: 0 0 0 10px;
+
+        &:first-child {
+          margin: 0;
+        }
+
+        &.active {
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 26px;
+          color: #346600;
+          text-decoration-line: none;
+          border: 1px solid #FFD600;
+          border-radius: 36px;
+        }
+      }
+    }
+
+    &__content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 58px 0 0;
+
+      &-item {
+        height: 56px;
+        background-image: url(../img/cart/bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: right;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        background-color: #30291D;
+        border: 1px solid #A8A8A8;
+        border-radius: 28px 0 0 28px;
+        border-right: 3px solid #FFD600;
+        margin: 10px 26px 0 0;
+        padding: 0 0 0 15px;
+        width: calc(100% - 26px);
+
+        &:first-child {
+          margin: 0 26px 0 0;
+        }
+
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+
+        span {
+          flex: 0 0 auto;
+          margin: 0 -26px 0 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 56px;
+          height: 56px;
+          background: #FFD600;
+          border: 4px solid #FFFDFD;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .products-slidebar {
+    margin: 100px 0 0 auto;
+    align-self: flex-start;
+  }
+
+  .products-body__content {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 50px 0 200px;
+  }
+}

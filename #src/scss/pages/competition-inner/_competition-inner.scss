@@ -1,0 +1,100 @@
+.competition-inner {
+  padding: 70px 0 0;
+  position: relative;
+
+  &__arrow {
+    &-prev {
+      position: absolute;
+      left: 0;
+      top: 450px;
+
+      @media (max-width:767px) {
+        display: none;
+      }
+
+      &.mobile {
+        display: none;
+
+        @media (max-width:767px) {
+          display: block;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+
+      img {
+        transform: rotate(180deg);
+      }
+    }
+
+    &-next {
+      position: absolute;
+      right: 0;
+      top: 450px;
+
+      @media (max-width:767px) {
+        display: none;
+      }
+
+      &.mobile {
+        display: none;
+
+        @media (max-width:767px) {
+          display: block;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+    }
+  }
+
+  .container {
+    max-width: 1530px;
+  }
+
+  &__img {
+    width: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__bottom {
+    margin: 22px 0 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  .competition-body {
+
+    &__item-info {
+      background: none;
+    }
+
+    &__rating {}
+
+    &__rating-content {}
+
+    &__rating-item {}
+
+    &__item-fb {}
+
+    &__item-text {}
+
+    &__item-creator {
+      color: #000;
+    }
+
+    &__item-size {}
+  }
+}

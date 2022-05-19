@@ -1,0 +1,56 @@
+.callback-btn {
+  position: fixed;
+  z-index: 5;
+  width: 215px;
+  right: 246px;
+  height: 80px;
+  bottom: 0;
+  background: #FFD600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #000000;
+  padding: 0 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    display: block;
+    border-bottom: 15px solid #FFD600;
+    border-left: 105px solid transparent;
+    border-right: 105px solid transparent;
+  }
+
+  &__close {
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    background: #4E9B00;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  @media (max-width:992px) {
+    display: none;
+  }
+}

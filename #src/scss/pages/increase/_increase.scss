@@ -1,0 +1,63 @@
+.increase {
+  position: relative;
+  padding: 55px 0 0;
+
+  .combobox-list {
+    padding: 80px 0 10px;
+  }
+
+  .products-slidebar {
+    width: 310px;
+    margin: 0 0 0 270px;
+  }
+
+  .products-body__content {
+    margin: 0 0 0 auto;
+  }
+
+  &-text {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: right;
+    color: #000000;
+
+    p {
+      margin: 30px 0 0;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &-btns {
+    margin: 26px 0 0;
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    a {
+      flex: 0 0 calc(50% - 8px);
+      background: #53A200;
+      height: 45px;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #FFFFFF;
+      margin: 0 0 0 16px;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+}

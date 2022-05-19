@@ -1,0 +1,152 @@
+.cart-bottom {
+  max-width: 1760px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &__coupon {
+    max-width: 660px;
+    margin: 50px auto 0;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: right;
+    color: #000000;
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #E7E7E7;
+      height: 75px;
+      padding: 0 24px;
+
+      flex-direction: row-reverse;
+
+      img {
+        width: 22px;
+      }
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-left: 7px solid #E7E7E7;
+      border-bottom: 10px solid #E7E7E7;
+      height: 75px;
+
+      flex-direction: row-reverse;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        white-space: nowrap;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #53A200;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #FFFFFF;
+      }
+
+      input {
+        width: 100%;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: right;
+        color: #000000;
+        padding: 0 10px;
+      }
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: #E7E7E7;
+        padding: 0 24px 0 40px;
+      }
+    }
+  }
+
+
+
+  &__delivery {
+    max-width: 660px;
+    margin: 25px auto 0;
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      text-align: right;
+      color: #000000;
+      height: 75px;
+      border-top: 7px solid #E7E7E7;
+      border-bottom: 7px solid #E7E7E7;
+      border-left: 7px solid #E7E7E7;
+
+      flex-direction: row-reverse;
+
+      img {
+        margin: 0 auto 0 17px;
+        width: 22px;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        margin: 0 0 0 20px;
+        height: 100%;
+        background: #E7E7E7;
+      }
+    }
+  }
+
+
+  &__summary {
+    margin: 60px 0 0 0;
+    border-top: 2px solid #252018;
+    background: #F4F4F4;
+    height: 75px;
+
+    &-container {
+      max-width: 660px;
+      margin: 0 auto;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 44px;
+      color: #000000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+
+      flex-direction: row-reverse;
+
+      span {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+    }
+  }
+}

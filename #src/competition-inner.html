@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'Competition inner',
+})
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            @@include('components/_header.html', {
+            "page": ""
+            })
+
+            @@include('components/ui/_mobile-bottom.html')
+            @@include('components/ui/_tel.html')
+            @@include('components/ui/_callback.html')
+
+            <div class="page__top">
+                <div class="page__top-title">
+                    <span>
+                        מחירון
+                    </span>
+                    > <span>
+                        עמוד הבית
+                    </span>
+                </div>
+            </div>
+            @@include('components/pages/competition-inner/_competition-inner.html')
+        </div>
+        @@include('components/_footer.html', {
+        "page": ''
+        })
+    </div>
+
+    @@include('components/_js.html')
+
+</body>
+
+</html>
