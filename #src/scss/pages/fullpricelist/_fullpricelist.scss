@@ -113,10 +113,7 @@
     &:nth-child(9) {
       flex: 1 1 94px;
     }
-
-
   }
-
 
   &__item {
     width: 100%;
@@ -317,8 +314,6 @@
       margin: 16px 0 0;
       display: flex;
       justify-content: space-between;
-
-      flex-direction: row-reverse;
     }
 
     &-item {

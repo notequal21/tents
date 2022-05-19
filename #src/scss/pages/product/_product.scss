@@ -88,7 +88,7 @@
         flex-wrap: wrap;
         flex-direction: row-reverse;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
 
         .name {
           font-family: 'Heebo';
@@ -98,6 +98,8 @@
           line-height: 21px;
           text-align: right;
           color: #346600;
+
+          margin: 0 4px 0 0;
         }
 
         .num {

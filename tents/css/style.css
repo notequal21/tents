@@ -5146,6 +5146,12 @@ h6 {
   padding: 55px 0 0;
 }
 
+.competition .competition-body__top {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .competition__title {
   margin: 0;
 }
@@ -5434,15 +5440,12 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .competition-body__item {
@@ -5452,15 +5455,15 @@ h6 {
 }
 
 .competition-body__item:nth-child(2n + 1) {
-  margin: 50px 0 0 60px;
+  margin: 50px 60px 0 0;
 }
 
 .competition-body__item:nth-child(4n + 2) {
-  margin: 50px 0 0 60px;
+  margin: 50px 60px 0 0;
 }
 
 .competition-body__item:nth-child(even) {
-  margin: 50px 0 0 60px;
+  margin: 50px 60px 0 0;
 }
 
 .competition-body__item:nth-child(3n + 1) {
@@ -5472,11 +5475,11 @@ h6 {
 }
 
 .competition-body__item:nth-child(2) {
-  margin: 0 0 0 60px;
+  margin: 0 60px 0 0;
 }
 
 .competition-body__item:nth-child(3) {
-  margin: 0 0 0 60px;
+  margin: 0 60px 0 0;
 }
 
 .competition-body__item .competition-body__item-info {
@@ -6522,9 +6525,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .product .pricelist-modal__desc-steps li .name {
@@ -6535,6 +6538,7 @@ h6 {
   line-height: 21px;
   text-align: right;
   color: #346600;
+  margin: 0 4px 0 0;
 }
 
 .product .pricelist-modal__desc-steps li .num {
@@ -8398,10 +8402,6 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
 }
 
 .fullprice-quiz__summary-item {
