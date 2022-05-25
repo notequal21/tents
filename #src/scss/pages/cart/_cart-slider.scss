@@ -15,17 +15,6 @@
       &-prev {
         position: absolute;
         z-index: 1;
-        left: 0;
-        top: 0;
-
-        &.swiper-button-disabled {
-          display: none;
-        }
-      }
-
-      &-next {
-        position: absolute;
-        z-index: 1;
         right: 0;
         top: 0;
 
@@ -36,6 +25,19 @@
         img {
           transform: rotate(180deg);
         }
+      }
+
+      &-next {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+
+        &.swiper-button-disabled {
+          display: none;
+        }
+
+
       }
     }
   }

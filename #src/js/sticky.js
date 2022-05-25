@@ -1,17 +1,18 @@
 
+if (document.querySelector(".header")) {
+    let header = document.querySelector(".header");
 
-let header = document.querySelector(".header");
+    let sticky = header.offsetTop;
 
-let sticky = header.offsetTop;
-
-function stickyHeader() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
+    function stickyHeader() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
     }
+    window.onscroll = function () { stickyHeader() };
 }
-window.onscroll = function () { stickyHeader() };
 
 if (document.querySelector('.pricelist-sidemenu')) {
 
@@ -20,15 +21,15 @@ if (document.querySelector('.pricelist-sidemenu')) {
     let contentBody = document.querySelector(".pricelist-body");
     let pageTop = document.querySelector(".page__top");
 
-    let sticky = contentBody.offsetTop;
+    let stickyItem = contentBody.offsetTop;
 
-    function stickyHeader() {
-        if (window.pageYOffset > sticky) {
+    function stickyMenu() {
+        if (window.pageYOffset > stickyItem + 160) {
             sidemenu.classList.add("sticky");
             content.classList.add("sticky");
             sidemenu.style.top = 20
             sidemenu.style.bottom = 'auto'
-            if (window.pageYOffset >= contentBody.clientHeight + pageTop.clientHeight) {
+            if (window.pageYOffset >= contentBody.clientHeight + pageTop.clientHeight - 160) {
                 sidemenu.classList.remove("sticky");
                 sidemenu.style.bottom = 0
                 content.classList.remove("sticky");
@@ -40,5 +41,5 @@ if (document.querySelector('.pricelist-sidemenu')) {
             sidemenu.style.bottom = 'auto'
         }
     }
-    window.onscroll = function () { stickyHeader() };
+    window.onscroll = function () { stickyMenu(), stickyHeader() };
 }

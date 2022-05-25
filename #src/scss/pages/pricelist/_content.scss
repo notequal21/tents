@@ -19,7 +19,8 @@
 
     &.sticky {
       position: fixed;
-      top: 20px;
+      // top: 20px;
+      top: 180px;
     }
 
     &__top {
@@ -345,7 +346,6 @@
       }
     }
 
-
     &__item {
       width: 310px;
 
@@ -362,6 +362,7 @@
         }
 
         span {
+          cursor: pointer;
           position: absolute;
           z-index: 1;
           top: 12px;
@@ -375,6 +376,66 @@
           display: inline-block;
           padding: 3px 8px;
           background: rgba(255, 255, 255, 0.8);
+        }
+
+        .tip {
+          cursor: pointer;
+          position: absolute;
+          z-index: 1;
+          top: 12px;
+          left: 0;
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #000000;
+          display: inline-block;
+          padding: 3px 8px;
+          background: rgba(255, 255, 255, 0.8);
+
+          &:hover {
+            .tip-content {
+              opacity: 1;
+              pointer-events: all;
+              visibility: visible;
+            }
+          }
+
+          &-content {
+            position: absolute;
+            left: 10px;
+            top: calc(100% + 18px);
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+            display: inline-block;
+            padding: 3px 8px;
+            width: 248px;
+            background: rgba(255, 255, 255, 1.0);
+            transition: all .3s ease;
+
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+
+            &::after {
+              content: '';
+              width: 32px;
+              height: 32px;
+              background: #fff;
+              position: absolute;
+              z-index: -1;
+              transform: rotate(45deg);
+              pointer-events: none;
+              user-select: none;
+              top: -4px;
+              left: 10px;
+            }
+          }
         }
       }
 
@@ -429,6 +490,13 @@
         color: #000000;
 
         flex-direction: row-reverse;
+
+        &.bigbtn {
+          .pricelist-content__item-buy {
+            cursor: pointer;
+            flex: 0 0 100%;
+          }
+        }
       }
 
       &-price {

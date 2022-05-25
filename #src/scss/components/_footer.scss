@@ -71,7 +71,6 @@
     }
   }
 
-
   &__text {
     margin: 25px 36px 0;
     font-family: 'Heebo';
@@ -106,6 +105,12 @@
         line-height: 35px;
         text-align: right;
         color: #FFD600;
+        display: flex;
+        flex-direction: row-reverse;
+
+        img {
+          margin: 0 0 0 10px;
+        }
       }
 
       &-link {
@@ -118,10 +123,11 @@
         color: #FFFFFF;
         position: relative;
 
+        display: flex;
+        flex-direction: row-reverse;
+
         img {
-          position: absolute;
-          top: 8px;
-          right: -22px;
+          margin: 0 0 0 10px;
         }
       }
 
