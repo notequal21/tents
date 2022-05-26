@@ -4211,7 +4211,7 @@ h6 {
 
 .cart-slider__item {
   margin: 65px auto 0;
-  max-width: 1760px;
+  max-width: 1720px;
   padding: 0 15px;
   overflow: hidden;
   position: relative;
@@ -6002,6 +6002,7 @@ h6 {
 
 .competition-inner__arrow-prev {
   position: absolute;
+  z-index: 1;
   left: 0;
   top: 450px;
 }
@@ -6018,6 +6019,7 @@ h6 {
 
 .competition-inner__arrow-next {
   position: absolute;
+  z-index: 1;
   right: 0;
   top: 450px;
 }
@@ -7419,6 +7421,11 @@ h6 {
   height: 0;
   padding: 0 0 10.5%;
   margin: 8px 0 0 8px;
+  border: 2px solid #D1D1D1;
+}
+
+.business-body__imgs-item.active {
+  border: 2px solid #FF9900;
 }
 
 .business-body__imgs-item:nth-child(7n +1) {
@@ -7662,7 +7669,7 @@ h6 {
 
 .gallery-photo__modal {
   position: fixed;
-  z-index: 20;
+  z-index: 1000;
   top: 0;
   left: 0;
   right: 0;
@@ -8303,6 +8310,55 @@ h6 {
 
 .fullpricelist-table__item input {
   margin: 0 0 0 10px;
+}
+
+.fullpricelist-table__sum {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  max-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 11px 14px 13px 24px;
+  background: #E4FFC7;
+  margin: 2px 0 0;
+  font-family: 'Heebo';
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.fullpricelist-table__btn {
+  cursor: pointer;
+  margin: 20px 0 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  max-width: 320px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #53A200;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  font-family: 'Heebo';
+  line-height: 24px;
+  color: #FFFFFF;
 }
 
 .fullprice-quiz {

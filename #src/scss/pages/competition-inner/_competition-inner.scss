@@ -5,6 +5,7 @@
   &__arrow {
     &-prev {
       position: absolute;
+      z-index: 1;
       left: 0;
       top: 450px;
 
@@ -29,6 +30,7 @@
 
     &-next {
       position: absolute;
+      z-index: 1;
       right: 0;
       top: 450px;
 
