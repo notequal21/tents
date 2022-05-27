@@ -43,6 +43,10 @@
 
     .fullpricelist-table__col {
       padding: 15px 20px 20px 10px;
+
+      &:nth-child(4) {
+        border-left: 2px solid #fff;
+      }
     }
 
     flex-direction: row-reverse;
@@ -92,6 +96,7 @@
 
     &:nth-child(4) {
       flex: 1 1 109px;
+      border-left: none;
     }
 
     &:nth-child(5) {

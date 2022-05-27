@@ -18,6 +18,10 @@
   color: #000000;
   padding: 0 30px;
 
+  &.active {
+    display: none;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -48,6 +52,50 @@
       object-fit: contain;
       object-position: center;
     }
+  }
+
+  @media (max-width:992px) {
+    display: none;
+  }
+}
+
+.callback-content {
+  position: fixed;
+  z-index: 5;
+  width: 370px;
+  right: 246px;
+  height: auto;
+  bottom: 0;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  &__close {
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    background: #4E9B00;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  .footer__follow {
+    display: block;
   }
 
   @media (max-width:992px) {

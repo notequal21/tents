@@ -1452,7 +1452,7 @@ h6 {
 .tents-body__item-tip {
   cursor: pointer;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 20px;
   background: rgba(255, 255, 255, 0.8);
   display: -webkit-box;
@@ -1519,6 +1519,15 @@ h6 {
           user-select: none;
   top: 0;
   left: 20px;
+}
+
+.tents-body__item-link {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .tents-body__item-img {
@@ -3282,6 +3291,8 @@ h6 {
 }
 
 .pricelist-content__item-length {
+  cursor: pointer;
+  position: relative;
   border-left: 1px solid #fff;
   background: #F4F4F4;
   height: 34px;
@@ -3297,6 +3308,10 @@ h6 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.pricelist-content__item-length:hover .pricelist-content__item-dropdown {
+  display: block;
 }
 
 .pricelist-content__item-length span {
@@ -3314,6 +3329,8 @@ h6 {
 }
 
 .pricelist-content__item-size {
+  cursor: pointer;
+  position: relative;
   border-left: 1px solid #fff;
   background: #F4F4F4;
   height: 34px;
@@ -3329,6 +3346,10 @@ h6 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.pricelist-content__item-size:hover .pricelist-content__item-dropdown {
+  display: block;
 }
 
 .pricelist-content__item-size span {
@@ -3472,6 +3493,25 @@ h6 {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.pricelist-content__item-dropdown {
+  display: none;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  background: #F4F4F4;
+}
+
+.pricelist-content__item-dropdown li {
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.pricelist-content__item-dropdown li:not(:first-child) {
+  margin: 4px 0 0;
 }
 
 .pricelist-modal {
@@ -4213,8 +4253,35 @@ h6 {
   margin: 65px auto 0;
   max-width: 1720px;
   padding: 0 15px;
-  overflow: hidden;
   position: relative;
+}
+
+.cart-slider__item::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: -5px;
+  width: 10000px;
+  min-height: calc(100% + 10px);
+  background-color: #fff;
+  -webkit-transform: scaleX(1) translate(-100%, 0);
+      -ms-transform: scaleX(1) translate(-100%, 0);
+          transform: scaleX(1) translate(-100%, 0);
+}
+
+.cart-slider__item::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: -5px;
+  width: 10000px;
+  min-height: calc(100% + 10px);
+  background-color: #fff;
+  -webkit-transform: scaleX(1) translate(100%, 0);
+      -ms-transform: scaleX(1) translate(100%, 0);
+          transform: scaleX(1) translate(100%, 0);
 }
 
 .cart-slider__item .cart-slider-button-prev {
@@ -6207,6 +6274,13 @@ h6 {
   color: #FFFFFF;
 }
 
+.branches-sidebar__form-capthca {
+  margin: 30px auto;
+  width: 100%;
+  max-width: 302px;
+  height: 76px;
+}
+
 .branches-sidebar__social {
   margin: 22px 0 0;
   display: -webkit-box;
@@ -8173,6 +8247,10 @@ h6 {
   padding: 15px 20px 20px 10px;
 }
 
+.fullpricelist-table__top .fullpricelist-table__col:nth-child(4) {
+  border-left: 2px solid #fff;
+}
+
 .fullpricelist-table__select {
   width: 100%;
   border-top: 2px solid #fff;
@@ -8232,6 +8310,7 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 109px;
           flex: 1 1 109px;
+  border-left: none;
 }
 
 .fullpricelist-table__col:nth-child(5) {
@@ -8981,6 +9060,10 @@ h6 {
   padding: 0 30px;
 }
 
+.callback-btn.active {
+  display: none;
+}
+
 .callback-btn::before {
   content: '';
   position: absolute;
@@ -9019,6 +9102,54 @@ h6 {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+}
+
+.callback-content {
+  position: fixed;
+  z-index: 5;
+  width: 370px;
+  right: 246px;
+  height: auto;
+  bottom: 0;
+  display: none;
+}
+
+.callback-content.active {
+  display: block;
+}
+
+.callback-content__close {
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  background: #4E9B00;
+  border: 1px solid #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.callback-content__close img {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.callback-content .footer__follow {
+  display: block;
 }
 
 .mobile-bottom {
@@ -10992,6 +11123,10 @@ body.lock {
   }
 
   .callback-btn {
+    display: none;
+  }
+
+  .callback-content {
     display: none;
   }
 

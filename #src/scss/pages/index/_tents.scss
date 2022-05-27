@@ -37,7 +37,7 @@
       &-tip {
         cursor: pointer;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         top: 20px;
         background: rgba(255, 255, 255, 0.8);
         display: flex;
@@ -96,6 +96,15 @@
             left: 20px;
           }
         }
+      }
+
+      &-link {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
 
       &-img {

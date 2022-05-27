@@ -13,6 +13,7 @@
 @@include('zoom.js')
 @@include('langSelect.js')
 @@include('comobox.js')
+@@include('callback.js')
 
 
 if (document.querySelector('.advantages-body')) {
