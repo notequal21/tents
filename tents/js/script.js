@@ -363,7 +363,7 @@ if (document.querySelector('.competition-top__btn')) {
 	modalBg.addEventListener('click', toggleModal)
 }
 
-if (document.querySelector('.pricelist-content__item-img')) {
+if (document.querySelector('.pricelist-content__item-img') && document.querySelector('.pricelist-modal')) {
 	const openBtn = document.querySelectorAll('.pricelist-content__item-img')
 	const modal = document.querySelector('.pricelist-modal')
 	const modalBg = document.querySelector('.pricelist-modal__bg')
@@ -414,6 +414,59 @@ if (document.querySelector('.gallery-photo__modal')) {
 	modalBg.addEventListener('click', toggleModal)
 	closeBtn.addEventListener('click', toggleModal)
 }
+
+if (document.querySelector('.cart-photo__modal')) {
+	const openBtn = document.querySelectorAll('.cart-body__item-img')
+	const modal = document.querySelector('.cart-photo__modal')
+	const modalBg = document.querySelector('.cart-photo__modal-bg')
+	const closeBtn = document.querySelector('.cart-photo__modal-close')
+	const body = document.querySelector('body')
+
+	let toggleModal = (e) => {
+		e.preventDefault()
+
+		if (modal.classList.contains('active')) {
+			modal.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			modal.classList.add('active')
+			body.classList.add('lock')
+		}
+	}
+
+	openBtn.forEach((item) => {
+		item.addEventListener('click', toggleModal)
+	})
+	modalBg.addEventListener('click', toggleModal)
+	closeBtn.addEventListener('click', toggleModal)
+}
+
+if (document.querySelector('.recomendation-photo__modal')) {
+	const openBtn = document.querySelectorAll('.recomendation-item__btn')
+	const modal = document.querySelector('.recomendation-photo__modal')
+	const modalBg = document.querySelector('.recomendation-photo__modal-bg')
+	const closeBtn = document.querySelector('.recomendation-photo__modal-close')
+	const body = document.querySelector('body')
+
+	let toggleModal = (e) => {
+		e.preventDefault()
+
+		if (modal.classList.contains('active')) {
+			modal.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			modal.classList.add('active')
+			body.classList.add('lock')
+		}
+	}
+
+	openBtn.forEach((item) => {
+		item.addEventListener('click', toggleModal)
+	})
+	modalBg.addEventListener('click', toggleModal)
+	closeBtn.addEventListener('click', toggleModal)
+}
+
 if (document.querySelector('.pricelist-modal-zoom')) {
   let zoomBtn = document.querySelectorAll('.pricelist-modal-zoom')
   let imgCon = document.querySelector('.pricelist-modal__zoom-container')
