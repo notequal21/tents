@@ -3314,10 +3314,6 @@ h6 {
           flex-direction: row-reverse;
 }
 
-.pricelist-content__item-length:hover .pricelist-content__item-dropdown {
-  display: block;
-}
-
 .pricelist-content__item-length span {
   margin: 0 0 0 8px;
 }
@@ -3350,10 +3346,6 @@ h6 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-
-.pricelist-content__item-size:hover .pricelist-content__item-dropdown {
-  display: block;
 }
 
 .pricelist-content__item-size span {
@@ -3509,6 +3501,10 @@ h6 {
   background: #F4F4F4;
 }
 
+.pricelist-content__item-dropdown.active {
+  display: block;
+}
+
 .pricelist-content__item-dropdown li {
   cursor: pointer;
   padding: 0 8px;
@@ -3603,6 +3599,8 @@ h6 {
 }
 
 .pricelist-modal__cost-size {
+  cursor: pointer;
+  position: relative;
   margin: 27px 0 0;
   background: #F4F4F4;
   font-family: 'Heebo';
@@ -3640,6 +3638,8 @@ h6 {
 }
 
 .pricelist-modal__cost-length {
+  cursor: pointer;
+  position: relative;
   margin: 10px 0 0;
   background: #F4F4F4;
   font-family: 'Heebo';
@@ -7613,7 +7613,8 @@ h6 {
 }
 
 .business-body__imgs-item.active {
-  border: 2px solid #FF9900;
+  border: 3px solid #FF9900;
+  padding: 0 0 calc(10.5% - 2px);
 }
 
 .business-body__imgs-item:nth-child(7n +1) {
@@ -8246,14 +8247,14 @@ h6 {
           flex-direction: row-reverse;
 }
 
-.recomendation-tabs__content-body div {
+.recomendation-tabs__content-body .recomendation-item__btn {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(25% - 45px);
           flex: 0 0 calc(25% - 45px);
   margin: 40px 0 0 60px;
 }
 
-.recomendation-tabs__content-body div img {
+.recomendation-tabs__content-body .recomendation-item__btn img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -8262,11 +8263,11 @@ h6 {
      object-position: center;
 }
 
-.recomendation-tabs__content-body div:nth-child(4n+ 1) {
+.recomendation-tabs__content-body .recomendation-item__btn:nth-child(4n+ 1) {
   margin: 40px 0 0;
 }
 
-.recomendation-tabs__content-body div:first-child {
+.recomendation-tabs__content-body .recomendation-item__btn:first-child {
   margin: 40px 0 0;
 }
 
@@ -8545,6 +8546,7 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 130px;
           flex: 1 1 130px;
+  border-left: none;
 }
 
 .fullpricelist-table__col:nth-child(7) {
@@ -8557,6 +8559,7 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 135px;
           flex: 1 1 135px;
+  border-left: none;
 }
 
 .fullpricelist-table__col:nth-child(9) {
@@ -9277,7 +9280,7 @@ h6 {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  text-align: right;
+  text-align: center;
   color: #000000;
   padding: 0 30px;
 }

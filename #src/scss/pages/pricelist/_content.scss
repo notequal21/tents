@@ -531,11 +531,11 @@
 
         flex-direction: row-reverse;
 
-        &:hover {
-          .pricelist-content__item-dropdown {
-            display: block;
-          }
-        }
+        // &:hover {
+        //   .pricelist-content__item-dropdown {
+        //     display: block;
+        //   }
+        // }
 
         span {
           margin: 0 0 0 8px;
@@ -563,11 +563,11 @@
 
         flex-direction: row-reverse;
 
-        &:hover {
-          .pricelist-content__item-dropdown {
-            display: block;
-          }
-        }
+        // &:hover {
+        //   .pricelist-content__item-dropdown {
+        //     display: block;
+        //   }
+        // }
 
         span {
           margin: 0 0 0 8px;
@@ -676,6 +676,10 @@
         top: 100%;
         left: 0;
         background: #F4F4F4;
+
+        &.active {
+          display: block;
+        }
 
         li {
           cursor: pointer;

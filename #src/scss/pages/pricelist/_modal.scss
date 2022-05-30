@@ -67,6 +67,8 @@
     }
 
     &-size {
+      cursor: pointer;
+      position: relative;
       margin: 27px 0 0;
       background: #F4F4F4;
       font-family: 'Heebo';
@@ -96,6 +98,8 @@
     }
 
     &-length {
+      cursor: pointer;
+      position: relative;
       margin: 10px 0 0;
       background: #F4F4F4;
       font-family: 'Heebo';

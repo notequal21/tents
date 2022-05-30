@@ -71,7 +71,8 @@
         border: 2px solid #D1D1D1;
 
         &.active {
-          border: 2px solid #FF9900;
+          border: 3px solid #FF9900;
+          padding: 0 0 calc(10.5% - 2px);
         }
 
         &:nth-child(7n +1) {

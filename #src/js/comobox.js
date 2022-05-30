@@ -35,3 +35,38 @@ if (document.querySelector('.competition-body__top-active')) {
 
   comboboxBtn.addEventListener('click', handleCombobox)
 }
+
+if (document.querySelector('.pricelist-content__item-length')) {
+  const btn = document.querySelectorAll('.pricelist-content__item-length')
+  const btn2 = document.querySelectorAll('.pricelist-content__item-size')
+  const dropdown = document.querySelectorAll('.pricelist-content__item-dropdown')
+
+  const toggleDropdown = () => {
+    if (dropdown[0].classList.contains('active')) {
+      dropdown.forEach(item => item.classList.remove('active'))
+    } else {
+      dropdown.forEach(item => item.classList.add('active'))
+    }
+  }
+
+  btn.forEach(item => item.addEventListener('click', toggleDropdown))
+  btn2.forEach(item => item.addEventListener('click', toggleDropdown))
+}
+
+if (document.querySelector('.pricelist-modal__cost-length')) {
+  console.log(123);
+  const btn = document.querySelectorAll('.pricelist-modal__cost-size')
+  const btn2 = document.querySelectorAll('.pricelist-modal__cost-length')
+  const dropdown = document.querySelectorAll('.pricelist-content__item-dropdown')
+
+  const toggleDropdown = () => {
+    if (dropdown[0].classList.contains('active')) {
+      dropdown.forEach(item => item.classList.remove('active'))
+    } else {
+      dropdown.forEach(item => item.classList.add('active'))
+    }
+  }
+
+  btn.forEach(item => item.addEventListener('click', toggleDropdown))
+  btn2.forEach(item => item.addEventListener('click', toggleDropdown))
+}
