@@ -281,8 +281,33 @@
     }
   }
 
+  &-zoom {
+    cursor: pointer;
+  }
+
+  &-price {
+    right: auto !important;
+    left: 0;
+
+    font-family: 'Heebo';
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+
+    &.mobile {
+      display: block;
+      background: #F6F6F6;
+      padding: 7px 9px 6px 18px;
+
+      @media (min-width:1201px) {
+        display: none;
+      }
+    }
+  }
+
   &__zoom-container {
     position: absolute;
+    z-index: 1;
     top: 20px;
     left: 20px;
     width: calc(100% - 710px);

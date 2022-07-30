@@ -37,6 +37,7 @@
 @import "pages/branches/_branches.scss";
 @import "pages/branch/_branch.scss";
 @import "pages/product/_product.scss";
+@import "pages/product/_product-modal.scss";
 @import "pages/about/_about.scss";
 @import "pages/alahot/_alahot.scss";
 @import "pages/alahot/_alahot-inner.scss";
@@ -58,6 +59,7 @@
 @import "ui/_mobile-bottom.scss";
 
 @import "media.scss";
+@import "_ltr.scss";
 
 
 // fonts --------- &display=swap || &subset=cyrillic-ext

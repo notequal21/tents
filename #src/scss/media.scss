@@ -735,6 +735,7 @@
           .footer-body__col-title {
             text-align: center;
             flex: 0 0 100%;
+            justify-content: center;
           }
 
           .footer-body__col-link {
@@ -1236,7 +1237,8 @@
       }
 
       &-modal__cost-btn {
-        flex: 0 0 100%;
+        flex: 0 0 calc(50% - 1px);
+        margin: 1px 0 0;
       }
 
       &-modal__desc-steps {

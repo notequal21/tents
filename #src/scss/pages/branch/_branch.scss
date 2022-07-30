@@ -83,6 +83,21 @@
         line-height: 32px;
         text-align: right;
         color: #000000;
+
+        &_time {
+          display: flex;
+          flex-direction: column;
+
+          >span {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+
+            span {
+              width: 80px;
+            }
+          }
+        }
       }
     }
   }

@@ -42,7 +42,14 @@
     button {
       @media (max-width:1400px) {
         margin: 20px 20px 0 0;
+
+        order: 5;
       }
+
+      @media (max-width:992px) {
+        order: 1;
+      }
+
 
       @media (max-width:767px) {
         margin: 20px 0 0;
@@ -73,22 +80,62 @@
 
       &:nth-of-type(1) {
         flex: 1 1 226px;
+
+        @media (max-width:1400px) {
+          order: 5;
+        }
+
+        @media (max-width:992px) {
+          order: 2;
+        }
       }
 
       &:nth-of-type(2) {
         flex: 1 1 266px;
+
+        @media (max-width:1400px) {
+          order: 6;
+        }
+
+        @media (max-width:992px) {
+          order: 3;
+        }
       }
 
       &:nth-of-type(3) {
         flex: 1 1 226px;
+
+        @media (max-width:1400px) {
+          order: 1;
+        }
+
+        @media (max-width:992px) {
+          order: 4;
+        }
       }
 
       &:nth-of-type(4) {
         flex: 1 1 316px;
+
+        @media (max-width:1400px) {
+          order: 2;
+        }
+
+        @media (max-width:992px) {
+          order: 5;
+        }
       }
 
       &:nth-of-type(5) {
         flex: 1 1 416px;
+
+        @media (max-width:1400px) {
+          order: 3;
+        }
+
+        @media (max-width:992px) {
+          order: 6;
+        }
       }
 
       input,
@@ -111,6 +158,9 @@
 
       &.select {
         position: relative;
+        height: 75px;
+
+        @media (max-width:1400px) {}
 
         &::after {
           content: url(../img/icons/arrow-green.svg);

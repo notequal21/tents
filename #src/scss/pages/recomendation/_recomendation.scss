@@ -143,6 +143,10 @@
         justify-content: flex-end;
         flex-direction: row-reverse;
 
+        @media (max-width:767px) {
+          flex-direction: column;
+        }
+
         // div {
         .recomendation-item__btn {
           flex: 0 0 calc(25% - 45px);
@@ -161,6 +165,16 @@
 
           &:first-child {
             margin: 40px 0 0;
+          }
+
+          @media (max-width:767px) {
+            flex: 0 0 100%;
+            margin: 40px 0 0;
+            overflow: hidden;
+
+            img {
+              object-fit: contain;
+            }
           }
         }
       }

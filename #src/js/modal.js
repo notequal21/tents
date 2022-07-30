@@ -34,13 +34,15 @@ if (document.querySelector('.pricelist-content__item-img') && document.querySele
 
 	let toggleModal = (e) => {
 		e.preventDefault()
-
-		if (modal.classList.contains('active')) {
-			modal.classList.remove('active')
-			body.classList.remove('lock')
-		} else {
-			modal.classList.add('active')
-			body.classList.add('lock')
+		console.log(e.target.classList, e.target.classList != 'tip');
+		if (e.target.classList != 'tip') {
+			if (modal.classList.contains('active')) {
+				modal.classList.remove('active')
+				body.classList.remove('lock')
+			} else {
+				modal.classList.add('active')
+				body.classList.add('lock')
+			}
 		}
 	}
 
@@ -108,6 +110,33 @@ if (document.querySelector('.recomendation-photo__modal')) {
 	const modal = document.querySelector('.recomendation-photo__modal')
 	const modalBg = document.querySelector('.recomendation-photo__modal-bg')
 	const closeBtn = document.querySelector('.recomendation-photo__modal-close')
+	const body = document.querySelector('body')
+
+	let toggleModal = (e) => {
+		e.preventDefault()
+
+		if (modal.classList.contains('active')) {
+			modal.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			modal.classList.add('active')
+			body.classList.add('lock')
+		}
+	}
+
+	openBtn.forEach((item) => {
+		item.addEventListener('click', toggleModal)
+	})
+	modalBg.addEventListener('click', toggleModal)
+	closeBtn.addEventListener('click', toggleModal)
+}
+
+
+if (document.querySelector('.product-photo__modal')) {
+	const openBtn = document.querySelectorAll('.pricelist-modal-zoom')
+	const modal = document.querySelector('.product-photo__modal')
+	const modalBg = document.querySelector('.product-photo__modal-bg')
+	const closeBtn = document.querySelector('.product-photo__modal-close')
 	const body = document.querySelector('body')
 
 	let toggleModal = (e) => {

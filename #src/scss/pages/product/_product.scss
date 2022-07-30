@@ -41,7 +41,7 @@
         display: none;
         margin: 25px auto 0;
         max-width: 500px;
-        order: 5;
+        order: 6;
 
         li {
           flex: 0 0 calc(25% - 9px);
@@ -175,6 +175,27 @@
 
       span {
         padding: 0 10px;
+      }
+    }
+
+    &-modal__cost-item {
+      order: 5;
+      flex: 0 0 calc(50% - 1px);
+      background: #F6F6F6;
+      margin: 1px 0 0 2px;
+
+      padding: 0 10px 0;
+      display: flex;
+      align-items: center;
+      font-family: 'Heebo';
+      font-size: 14px;
+      line-height: 21px;
+      color: #000000;
+
+      &.mobile {
+        @media (min-width:1200px) {
+          display: none;
+        }
       }
     }
   }
